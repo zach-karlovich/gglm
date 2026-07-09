@@ -4,6 +4,7 @@ Rate limit: 500 requests per 15 min. Docs: https://ntrs.nasa.gov/api/openapi/
 Every record found is registered in the catalog (gglm.catalog).
 """
 
+import os
 import sys
 import time
 from pathlib import Path
@@ -19,6 +20,7 @@ CONTACT_EMAIL = "ddf4me@virginia.edu"
 HEADERS = {"User-Agent": f"gglm/0.1 (mailto:{CONTACT_EMAIL})"}
 PAGE_SIZE = 100
 SLEEP_SECONDS = 2
+DATA = Path(os.environ.get("GGLM_DATA", "data"))
 
 SKIP_STI_TYPES = {"ABSTRACT", "EXTENDED_ABSTRACT", "VIDEO"}
 
@@ -66,7 +68,7 @@ def pdf_url(record):
     return None
 
 
-def download_pdf(record, out_dir="data/raw/ntrs"):
+def download_pdf(record, out_dir=DATA / "raw" / "ntrs"):
     """Save a record's PDF as {id}.pdf and return the path, or None if no PDF."""
     url = pdf_url(record)
     if url is None:

@@ -17,3 +17,18 @@ Rivanna). `scanned` documents need OCR from scratch.
 
 Test fixtures: Mock & Holt (1976), NSWC/DL TR-3473; Rynearson & Rand (1972),
 TEES-9075-CR-72-02 — US government reports, public domain.
+
+## Data layout
+
+Bulk data (raw PDFs, parsed pages, chunks) lives under `$GGLM_DATA`, default
+`data/`. On Rivanna point it at scratch; the catalog stays in the repo since
+scratch purges idle files:
+
+```
+export GGLM_DATA=/scratch/$USER/gglm
+bash scripts/collect.sh            # NTRS + OSTI queries, download PDFs
+uv run python scripts/parse_all.py # page JSONL + kind distribution
+uv run python -m gglm.chunk        # retrieval-ready chunks
+```
+
+`data/catalog.jsonl` (provenance, licenses, citations) is always repo-local.
