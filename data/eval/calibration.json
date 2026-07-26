@@ -1,0 +1,105 @@
+{
+  "rows": [
+    [
+      "What can drive the first stage?",
+      0.56773841381073,
+      "yes"
+    ],
+    [
+      "What is the role of the sabot?",
+      0.583369791507721,
+      "yes"
+    ],
+    [
+      "Why can hydrogen give higher velocities than helium?",
+      0.6159528493881226,
+      "yes"
+    ],
+    [
+      "What gases are used as the light gas?",
+      0.6299453973770142,
+      "yes"
+    ],
+    [
+      "What material is noted for emitting intense light even at lower impact speeds?",
+      0.6620988845825195,
+      "yes"
+    ],
+    [
+      "What does the piston do in the pump tube?",
+      0.6708216071128845,
+      "yes"
+    ],
+    [
+      "What event triggers the launch of the projectile in the second stage?",
+      0.7245257496833801,
+      "yes"
+    ],
+    [
+      "How is projectile velocity measured in the range?",
+      0.7382986545562744,
+      "yes"
+    ],
+    [
+      "How does pump tube fill pressure affect launch velocity?",
+      0.786095917224884,
+      "yes"
+    ],
+    [
+      "How do two-stage gun velocities compare to single-stage powder guns?",
+      0.8198168277740479,
+      "yes"
+    ],
+    [
+      "How do I train a puppy not to bite?",
+      0.2792624831199646,
+      "no"
+    ],
+    [
+      "Who won the 2022 World Cup final?",
+      0.3396342396736145,
+      "no"
+    ],
+    [
+      "What is the best recipe for vanilla ice cream?",
+      0.3464622497558594,
+      "no"
+    ],
+    [
+      "What are the common side effects of ibuprofen?",
+      0.3600989282131195,
+      "no"
+    ],
+    [
+      "What is a good beginner sourdough starter ratio?",
+      0.3628597855567932,
+      "no"
+    ],
+    [
+      "When was the Eiffel Tower completed?",
+      0.3703126907348633,
+      "no"
+    ],
+    [
+      "What time zone is Anchorage, Alaska in?",
+      0.37612074613571167,
+      "no"
+    ],
+    [
+      "How many strings does a cello have?",
+      0.3916935622692108,
+      "no"
+    ],
+    [
+      "How do I file a Virginia state tax extension?",
+      0.4288596510887146,
+      "no"
+    ],
+    [
+      "Which planets have retrograde rotation?",
+      0.524344801902771,
+      "no"
+    ]
+  ],
+  "suggested": 0.5460416078567505
+}

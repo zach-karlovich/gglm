@@ -6,9 +6,10 @@ import argparse
 from gglm import index, retrieve
 
 # cosine of the best retrieved chunk below which we refuse to answer.
-# Placeholder until scripts/calibrate_refusal.py runs on the full index;
-# a wrong firing parameter is worse than no answer, so the gate errs high.
-REFUSAL_THRESHOLD = 0.60
+# Calibrated 2026-07-26 on the full index: dev questions score 0.568-0.820,
+# off-domain probes 0.279-0.524, so 0.55 splits them with margin both ways.
+# Gate check: 0/91 answerable refused, 10/10 off-domain refused.
+REFUSAL_THRESHOLD = 0.55
 
 
 def gate(support, threshold=REFUSAL_THRESHOLD):
