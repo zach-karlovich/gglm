@@ -8,12 +8,30 @@ license = { text = "Apache-2.0" }
 dependencies = [
     "httpx>=0.28.1",
     "pymupdf>=1.25",
+    "numpy>=1.26",
 ]
 
 [dependency-groups]
 dev = [
     "pytest>=8.0",
 ]
+# retrieval + evaluation stack; GPU-sized, synced on Rivanna with
+#   uv sync --group rag
+rag = [
+    "torch>=2.4",
+    "transformers>=4.56",
+    "accelerate>=1.0",
+    "sentence-transformers>=3.0",
+    "rank-bm25>=0.2",
+    "lm_eval>=0.4.8",
+    "datasets>=3.0",
+]
+
+[tool.uv]
+# Triton JIT-compiles a CUDA helper against the interpreter's headers the
+# first time a kernel runs, and Rivanna's system Python has no Python.h.
+# Managed interpreters ship the full include directory.
+python-preference = "only-managed"
 
 [build-system]
 requires = ["hatchling"]
