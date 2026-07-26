@@ -54,7 +54,7 @@ def chunk_all(parsed_dir=DATA / "parsed", out_path=DATA / "chunks" / "chunks.jso
     """Chunk every parsed document with a catalog entry. Dedup by sha256."""
     entries = catalog.load()
     seen = set()
-    n_docs = n_chunks = 0
+    n_docs = n_chunks = n_offtopic = 0
     out_path = Path(out_path)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     with out_path.open("w", encoding="utf-8") as f:
@@ -62,6 +62,9 @@ def chunk_all(parsed_dir=DATA / "parsed", out_path=DATA / "chunks" / "chunks.jso
             key = f"{path.parent.name}:{path.stem}"
             entry = entries.get(key)
             if entry is None or entry.get("kind") in SKIP_KINDS:
+                continue
+            if entry.get("topical") is False:  # flagged by scripts/filter_corpus.py; unflagged catalogs chunk everything
+                n_offtopic += 1
                 continue
             if entry.get("sha256") in seen:
                 continue
@@ -72,6 +75,8 @@ def chunk_all(parsed_dir=DATA / "parsed", out_path=DATA / "chunks" / "chunks.jso
             n_docs += 1
             n_chunks += len(chunks)
     print(f"{n_chunks} chunks from {n_docs} documents -> {out_path}")
+    if n_offtopic:
+        print(f"{n_offtopic} off-topic documents skipped")
     return out_path
 
 
