@@ -61,6 +61,14 @@ def test_parse_pair_applies_the_filters():
     assert parse_pair(good) == ("What gas fills the pump tube on this gun?", "Hydrogen")
 
 
+def test_parse_pair_normalizes_ocr_unicode():
+    # fi-ligature and unicode minus, both straight out of old scans
+    raw = '{"question": "What did the crater survey of the Mg−Ti alloy targets find?", "answer": "artiﬁcial craters"}'
+    q, a = parse_pair(raw)
+    assert "Mg-Ti" in q
+    assert a == "artificial craters"
+
+
 def test_sampling_requires_domain_dense_chunks():
     chunks = [
         {"key": "a", "i": 0, "text": "lava flows traced from their vents " * 40},

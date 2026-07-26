@@ -5,6 +5,7 @@ import json
 import os
 import random
 import re
+import unicodedata
 from pathlib import Path
 
 from gglm import index
@@ -59,6 +60,12 @@ META = re.compile(
     re.I,
 )
 FILENAME = re.compile(r"^\S+\.\w{2,4}$")
+OCR_PUNCT = str.maketrans({"−": "-", "–": "-", "—": "-"})  # minus and dashes NFKC won't fold
+
+
+def clean_text(s):
+    """NFKC plus the punctuation OCR text tends to carry."""
+    return unicodedata.normalize("NFKC", s).translate(OCR_PUNCT)
 
 
 def sample_chunks(chunks, n=150, seed=42):
@@ -130,6 +137,7 @@ def parse_pair(text):
     except json.JSONDecodeError:
         return None
     q, a = str(obj.get("question", "")).strip(), str(obj.get("answer", "")).strip()
+    q, a = clean_text(q), clean_text(a) # OCR text carries fi-ligatures and unicode minus signs
     if not q.endswith("?") or not a or not usable(q, a):
         return None
     return q, a
