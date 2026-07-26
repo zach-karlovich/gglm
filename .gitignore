@@ -2,7 +2,10 @@
 __pycache__/
 *.pyc
 .pytest_cache/
-data/
 *.jsonl
 
-data/
+# keep only data/eval/ in git: eval sets are small and must survive a scratch purge
+data/*
+!data/eval/
+data/eval/*
+!data/eval/*.jsonl
