@@ -16,6 +16,27 @@ RAG_SYSTEM = (
     "If they do not contain the answer, say so."
 )
 
+# two demos ahead of the real question: answer in one cited sentence, and
+# refuse when the sources don't have it. Check-in 4 showed the model is
+# right but wordy (hit@5 0.76 vs substring 0.25) and never refuses on its
+# own (squadv2 NoAns 0.0). Demo text comes from the check-in 3 dev pairs,
+# never the test split.
+DEMOS = [
+    (
+        "[1] Two-stage light gas guns: A two-stage light gas gun has two separate "
+        "firing stages. The first stage can be driven by powder or gas, and the "
+        "second stage is typically gas.",
+        "What can drive the first stage?",
+        "Powder or gas [1].",
+    ),
+    (
+        "[1] Sabot design: A sabot carries the projectile through the launch tube "
+        "and is designed to separate from it after the projectile exits the muzzle.",
+        "What alloy is the rupture diaphragm made of?",
+        "The sources do not contain this.",
+    ),
+]
+
 
 def load_generator(model_id=GENERATOR):
     import torch
@@ -34,10 +55,12 @@ def build_messages(question, contexts=None):
         sources = "\n\n".join(
             f"[{n}] {c['title']}: {c['text']}" for n, c in enumerate(contexts, 1)
         )
-        return [
-            {"role": "system", "content": RAG_SYSTEM},
-            {"role": "user", "content": f"Sources:\n{sources}\n\nQuestion: {question}"},
-        ]
+        msgs = [{"role": "system", "content": RAG_SYSTEM}]
+        for demo_src, demo_q, demo_a in DEMOS:
+            msgs.append({"role": "user", "content": f"Sources:\n{demo_src}\n\nQuestion: {demo_q}"})
+            msgs.append({"role": "assistant", "content": demo_a})
+        msgs.append({"role": "user", "content": f"Sources:\n{sources}\n\nQuestion: {question}"})
+        return msgs
     return [
         {"role": "system", "content": SYSTEM},
         {"role": "user", "content": f"Question: {question}"},
