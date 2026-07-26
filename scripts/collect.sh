@@ -28,6 +28,16 @@ QUERIES=(
     "photonic Doppler velocimetry"
     "flyer plate impact"
     "Whipple shield"
+    # phenomena the first thirteen missed. Narrow phrases on purpose:
+    # "composite materials" or "failure modes" match half of OSTI. No
+    # flash x-ray query, that phrase belongs to solar flares and EMP
+    # testing too; those papers arrive under debris cloud instead.
+    "debris cloud"
+    "spall fracture"
+    "ballistic limit equation"
+    "crater scaling"
+    "shock equation of state"
+    "composite overwrapped pressure vessel"
 )
 
 # One source failing (an API hiccup, a CDN 500) must not abandon the rest of
