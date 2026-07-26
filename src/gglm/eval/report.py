@@ -62,6 +62,9 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--dir", default=RUN_DIR, type=Path)
     args = ap.parse_args()
+    if not any(args.dir.glob("*_results.json")):  # silence here just looks like a hang
+        print(f"no results JSONs in {args.dir.resolve()} - point --dir at a run's output")
+        return
     custom_table(args.dir)
     combo_table(args.dir)
     benchmark_table(args.dir)
