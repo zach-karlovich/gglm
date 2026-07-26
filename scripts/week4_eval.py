@@ -13,10 +13,10 @@ import os
 from pathlib import Path
 
 from gglm import index, retrieve
-from gglm.ask import REFUSAL_THRESHOLD, gate, support_score
+from gglm.ask import gate, support_score
 from gglm.eval import bench
 from gglm.eval.qagen import eval_dir
-from calibrate_refusal import OFF_DOMAIN
+from calibrate_refusal import OFF_DOMAIN, print_table, suggest
 
 OUT = Path(os.environ.get("GGLM_DATA", "data")) / "eval" / "week4"
 
@@ -24,8 +24,16 @@ OUT = Path(os.environ.get("GGLM_DATA", "data")) / "eval" / "week4"
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--combo", default="qwen-emb-cosine")
-    ap.add_argument("--threshold", type=float, default=REFUSAL_THRESHOLD)
+    ap.add_argument("--threshold", type=float, default=None,
+                    help="omit to calibrate in-run and use the suggested cutoff")
     args = ap.parse_args()
+
+    if args.threshold is None:
+        rows, cut = suggest(args.combo)
+        print_table(rows, cut)
+        bench.dump({"rows": rows, "suggested": cut}, OUT / "calibration.json")
+        args.threshold = cut if cut is not None else 0.60  # fall back to the ask.py placeholder
+        print(f"using threshold {args.threshold:.2f}\n")
 
     from gglm.generate import load_generator
 
