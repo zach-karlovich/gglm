@@ -79,6 +79,11 @@ class DenseIndex:
             self.model.max_seq_length or MAX_SEQ_LEN, MAX_SEQ_LEN
         )  # match build_dense
         path = Path(index_dir or INDEX_DIR) / f"{slug(model_name)}.npy"
+        if not path.exists():  # the usual cause is a shell without GGLM_DATA exported
+            raise FileNotFoundError(
+                f"no index at {path.resolve()} - build it with 'python -m gglm.index' "
+                f"or export GGLM_DATA to point at the data root"
+            )
         self.emb = np.load(path)
         norms = np.linalg.norm(self.emb, axis=1)
         self._unit = self.emb / np.maximum(norms, 1e-12)[:, None]
