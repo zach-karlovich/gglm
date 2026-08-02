@@ -67,13 +67,27 @@ def build_messages(question, contexts=None):
     ]
 
 
+def render(tok, messages):
+    """Apply the chat template, folding the system turn into the first user
+    turn for templates that reject system roles (Mistral)."""
+    try:
+        return tok.apply_chat_template(
+            messages, tokenize=False, add_generation_prompt=True
+        )
+    except Exception: # jinja: roles must alternate user/assistant
+        merged = dict(
+            messages[1], content=messages[0]["content"] + "\n\n" + messages[1]["content"]
+        )
+        return tok.apply_chat_template(
+            [merged] + messages[2:], tokenize=False, add_generation_prompt=True
+        )
+
+
 def chat(model, tok, messages, max_new_tokens=160):
     """Greedy single-turn completion of a chat message list."""
     import torch
 
-    text = tok.apply_chat_template(
-        messages, tokenize=False, add_generation_prompt=True
-    )
+    text = render(tok, messages)
     inputs = tok(text, return_tensors="pt").to(model.device)
     with torch.no_grad():
         out = model.generate(
