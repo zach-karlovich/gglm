@@ -1,0 +1,7 @@
+{
+  "tag": "llama-3-1-8b-instruct",
+  "n": 91,
+  "retrieval": false,
+  "token_f1": 0.08282777597895995,
+  "substring_hit": 0.0
+}

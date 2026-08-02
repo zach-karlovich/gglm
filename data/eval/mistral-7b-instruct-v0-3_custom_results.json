@@ -1,0 +1,7 @@
+{
+  "tag": "mistral-7b-instruct-v0-3",
+  "n": 91,
+  "retrieval": false,
+  "token_f1": 0.09818217945156285,
+  "substring_hit": 0.0
+}

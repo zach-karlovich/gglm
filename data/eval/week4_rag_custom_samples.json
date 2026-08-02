@@ -1,0 +1,3273 @@
+[
+  {
+    "qid": "synth-000",
+    "question": "What type of gas gun was used in the experiments to conduct the ballistic impact tests?",
+    "gold": "a helium-filled gas gun",
+    "prediction": "A 20-mm accelerated-reservoir light-gas gun was used [5].",
+    "token_f1": 0.2222222222222222,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "dtic:ADA019321",
+        "i": 47,
+        "title": "Ballistic Impact Flash Resulting from Complete Projectile Penetration of Titanium Targets"
+      },
+      {
+        "key": "ntrs:19660012978",
+        "i": 32,
+        "title": "Hypervelocity impact effects on liquid hydrogen tanks Final report, 1 Jul. 1964 - 30 Nov. 1965"
+      },
+      {
+        "key": "ntrs:20080015653",
+        "i": 1,
+        "title": "NASA Marshall Impact Testing Facility Capabilities Applicable to Lunar Dust Work"
+      },
+      {
+        "key": "ntrs:20110010224",
+        "i": 7,
+        "title": "Impact Testing for Materials Science at NASA - MSFC"
+      },
+      {
+        "key": "dtic:AD0356903",
+        "i": 6,
+        "title": "HYPERVELOCITY IMPACT EXPERIMENTS"
+      }
+    ],
+    "hit_at_k": 0.0
+  },
+  {
+    "qid": "synth-001",
+    "question": "What theoretical formula was tested in the study involving water drops impacting water?",
+    "gold": "Theoretical formula of Charters and Summers (1959)",
+    "prediction": "The study involving water drops impacting water tested the fluid-impact theory of Charters and Summers [1].",
+    "token_f1": 0.4,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "dtic:AD0423064",
+        "i": 30,
+        "title": "PROCEEDINGS OF THE SIXTH SYMPOSIUM ON HYPERVELOCITY IMPACT, CLEVELAND, OHIO, APRIL 30, MAY 1, 2, 1963, SPONSORED BY: U.S. ARMY, U.S. AIR FORCE, U.S. NAVY. VOLUME 2, PART 2"
+      },
+      {
+        "key": "dtic:ADA042656",
+        "i": 8,
+        "title": "Erosion Mechanics and Micromechanics Program."
+      },
+      {
+        "key": "ntrs:19650015410",
+        "i": 85,
+        "title": "A bibliography concerning aspects of the meteoroid hazard"
+      },
+      {
+        "key": "dtic:ADA031996",
+        "i": 102,
+        "title": "A Review of the Analyses of Hydrodynamic Ram"
+      },
+      {
+        "key": "dtic:ADA036141",
+        "i": 4,
+        "title": "Water Drop/Bow Shock Interactions."
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-002",
+    "question": "What improvement is suggested to increase the measurement accuracy of the charge currents of the ejecta clouds?",
+    "gold": "The collector plates are to be replaced by wire grids mounted parallel to both sides of the target.",
+    "prediction": "Replacing the collector plates with wire grids mounted parallel to both sides of the target will improve the impact charge measurement accuracy [1].",
+    "token_f1": 0.6285714285714286,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "dtic:ADA272957",
+        "i": 1080,
+        "title": "Hypervelocity Impact: Proceedings of the 1992 Symposium Held in Austin, Texas on 17-19 November 1992"
+      },
+      {
+        "key": "dtic:AD0673515",
+        "i": 53,
+        "title": "INVESTIGATION OF CRATER GROWTH AND EJECTA CLOUD RESULTING FROM HYPERVELOCITY IMPACT OF ALUMINUM SPHERES ON THICK ALUMINUM TARGETS"
+      },
+      {
+        "key": "osti:1960174",
+        "i": 33,
+        "title": "Payload concepts for investigations of electrostatic dust motion on the lunar surface"
+      },
+      {
+        "key": "ntrs:19700012297",
+        "i": 92,
+        "title": "Experimental hypervelocity impact research program Final report, Jul. 1966 - Dec. 1967"
+      },
+      {
+        "key": "ntrs:19940010010",
+        "i": 148,
+        "title": "Secondary impact hazard assessment"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-003",
+    "question": "Why was cadmium chosen as the target material in the light gas gun experiment?",
+    "gold": "Cadmium was chosen because it has a relatively simple spectrum, it is easy to vaporize, and it is not expected to be present in micrometeoroid material.",
+    "prediction": "Cadmium was chosen as a target material because it has a relatively simple spectrum, it is easy to vaporize, and it is not expected to be present in micrometeoroid material [1].",
+    "token_f1": 0.9433962264150945,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "ntrs:19680014682",
+        "i": 25,
+        "title": "Impact flash for micrometeoroid detection Final report"
+      },
+      {
+        "key": "ntrs:19700006085",
+        "i": 60,
+        "title": "Meteoroid impact flash analyzer Final report"
+      },
+      {
+        "key": "dtic:AD0867762",
+        "i": 3,
+        "title": "Hypervelocity Impact Damage in Cadmium Targets"
+      },
+      {
+        "key": "dtic:AD0817973",
+        "i": 17,
+        "title": "AN INVESTIGATION OF THE DEBRIS CLOUD PRODUCED BY THE IMPACT OF SPHERES ON THIN METAL SHEETS"
+      },
+      {
+        "key": "ntrs:20220013697",
+        "i": 0,
+        "title": "An Efficient and Effective Light Gas Gun Design for Millimeter-scale Hypervelocity Testing"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-004",
+    "question": "What materials were used for the bumper and pellet in the two different series of experiments?",
+    "gold": "In one series, a Lexan bumper and Lexan pellet were used, while in the other series, a Lexan pellet and lead bumper were used.",
+    "prediction": "In the first series of experiments, the bumpers were made from 17 different materials including aluminum (6061-T6), steel, magnesium-lithium alloy (LA-141), and stainless steel (Type 301). The pellets were primarily made of 2017 aluminum. In the second series, a double bumper setup with 6061-T6 aluminum bumpers 7.62 cm apart was used, and a 0.635 cm thick, 6061-T6 aluminum rear sheet was placed 38 cm behind the initial bumpers [1, 5].",
+    "token_f1": 0.24390243902439024,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "dtic:AD0676275",
+        "i": 56,
+        "title": "THE EFFECTS OF BUMPER MATERIAL PROPERTIES ON THE OPERATION OF SPACED HYPERVELOCITY PARTICLE SHIELDS"
+      },
+      {
+        "key": "dtic:AD0783315",
+        "i": 14,
+        "title": "Response of Materials to Impulsive Loading"
+      },
+      {
+        "key": "ntrs:19630006152",
+        "i": 2,
+        "title": "Study of Principles of Meteroid Protection"
+      },
+      {
+        "key": "ntrs:19930014058",
+        "i": 0,
+        "title": "Impact experiments into multiple-mesh targets: Concept development of a lightweight collisional bumper"
+      },
+      {
+        "key": "dtic:ADA272957",
+        "i": 388,
+        "title": "Hypervelocity Impact: Proceedings of the 1992 Symposium Held in Austin, Texas on 17-19 November 1992"
+      }
+    ],
+    "hit_at_k": 0.0
+  },
+  {
+    "qid": "synth-006",
+    "question": "What is the purpose of testing the starter sections of both systems with payloads through the first two stages?",
+    "gold": "These tests and refinements of each concept would produce a high level of confidence prior to proceeding with plans for actual launcher construction.",
+    "prediction": "The sources do not contain this specific information.",
+    "token_f1": 0.0,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "dtic:ADA230467",
+        "i": 77,
+        "title": "Debris Production in Hypervelocity Impact ASAT Engagements"
+      },
+      {
+        "key": "ntrs:20010066711",
+        "i": 30,
+        "title": "A New Technique for Achieving Impact Velocities Greater Than 10 km/sec"
+      },
+      {
+        "key": "ntrs:19730012525",
+        "i": 16,
+        "title": "Explosively driven hypervelocity launcher: Second-stage augmentation techniques"
+      },
+      {
+        "key": "ntrs:20090021990",
+        "i": 272,
+        "title": "2007 Research and Technology"
+      },
+      {
+        "key": "dtic:ADA462130",
+        "i": 32,
+        "title": "Combustion Light Gas Gun Technology Demonstration"
+      }
+    ],
+    "hit_at_k": 0.0
+  },
+  {
+    "qid": "synth-007",
+    "question": "What is another term used for the Height of Burst (HOB) in the context of the NED detonation?",
+    "gold": "standoff distance",
+    "prediction": "Scaled Height of Burst (SHOB) [2].",
+    "token_f1": 0.0,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "osti:3024473",
+        "i": 20,
+        "title": "Space Mission Options for Reconnaissance and Mitigation of Asteroid 2024 YR4"
+      },
+      {
+        "key": "dtic:ADA114546",
+        "i": 7,
+        "title": "Introduction to Nuclear Dust/Debris Cloud Formation."
+      },
+      {
+        "key": "ntrs:20205011413",
+        "i": 11,
+        "title": "A Study of the Swelling and Bursting of the High Pressure Coupling (HPC) of a Two-Stage Light Gas Gun"
+      },
+      {
+        "key": "dtic:ADA263898",
+        "i": 2,
+        "title": "Detonation Wave Curvature, Corner Turning, and Unreacted Hugoniot of PBXN-111"
+      },
+      {
+        "key": "dtic:ADA272957",
+        "i": 481,
+        "title": "Hypervelocity Impact: Proceedings of the 1992 Symposium Held in Austin, Texas on 17-19 November 1992"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-008",
+    "question": "What is the primary force dominating the expansion stage of the spherical blast process?",
+    "gold": "inertia forces",
+    "prediction": "Inertial forces [1].",
+    "token_f1": 0.5,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "dtic:AD0423063",
+        "i": 165,
+        "title": "PROCEEDINGS OF THE SIXTH SYMPOSIUM ON HYPERVELOCITY IMPACT, CLEVELAND, OHIO, APRIL 30-May 2, 1963. Volume 2, Part 1"
+      },
+      {
+        "key": "dtic:AD0415617",
+        "i": 58,
+        "title": "SPHERICAL SHOCK WAVES IN SOLIDS"
+      },
+      {
+        "key": "ntrs:19660006099",
+        "i": 13,
+        "title": "Hypervelocity impact - A series solution. Part II - Spherical flow"
+      },
+      {
+        "key": "ntrs:19680006308",
+        "i": 31,
+        "title": "Explosive hypervelocity launchers"
+      },
+      {
+        "key": "osti:3367091",
+        "i": 47,
+        "title": "Shock wave formation in the thermosphere by an earthgrazing fireball: Empirical evidence for volatile-enhanced hydrodynamic shielding"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-009",
+    "question": "What type of model was used to represent the sabot and penetrator slug?",
+    "gold": "An axisymmetric solid model",
+    "prediction": "The sabot and penetrator slug were represented by a axisymmetric solid model [1].",
+    "token_f1": 0.4615384615384615,
+    "substring_hit": 1.0,
+    "retrieved": [
+      {
+        "key": "dtic:ADA630621",
+        "i": 2,
+        "title": "Transient Analysis Method for HEMi Sabot Structural Design"
+      },
+      {
+        "key": "dtic:ADA072926",
+        "i": 13,
+        "title": "Response of a Model Roof Slab to Fragment Impact Loading."
+      },
+      {
+        "key": "ntrs:19880000661",
+        "i": 76,
+        "title": "A feasibility study of a hypersonic real-gas facility"
+      },
+      {
+        "key": "dtic:AD0632924",
+        "i": 18,
+        "title": "LAUNCHING OF FOAMED-PLASTIC MODELS WITH A TWO-STAGE LIGHT-GAS GUN"
+      },
+      {
+        "key": "ntrs:19660004002",
+        "i": 8,
+        "title": "Investigation of characteristics of pressure waves generated in water filled tanks impacted by high-velocity projectiles"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-010",
+    "question": "What method is used to determine the magnification factor for each x-ray in the calibration procedure?",
+    "gold": "The distance between the notches in each of the beads is measured and compared with the distance between these two points in the x-ray image.",
+    "prediction": "The method used to determine the magnification factor for each x-ray in the calibration procedure involves taking separate measurements of the crater depth and/or diameter on both sets of radiographs\u2014those taken during the impact event and those taken later. The crater dimensions from the impact event radiographs are then divided by the same dimensions from the radiographs taken after the event to obtain the magnification factor [1].",
+    "token_f1": 0.13333333333333333,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "dtic:AD0718461",
+        "i": 57,
+        "title": "Hypervelocity Impact -- Material Strength Effects on Crater Formation and Shock Propagation in Three Aluminum Alloys"
+      },
+      {
+        "key": "dtic:ADA201713",
+        "i": 19,
+        "title": "Techniques for the Measurement of Tank Cannon Jump"
+      },
+      {
+        "key": "osti:3018771",
+        "i": 8,
+        "title": "Mechanism of the wurtzite to rocksalt phase transformation in cadmium sulfide single crystals shock compressed along the \ud835\udc50-axis to elastic impact stresses of \u223c 5 GPa"
+      },
+      {
+        "key": "dtic:AD0673515",
+        "i": 30,
+        "title": "INVESTIGATION OF CRATER GROWTH AND EJECTA CLOUD RESULTING FROM HYPERVELOCITY IMPACT OF ALUMINUM SPHERES ON THICK ALUMINUM TARGETS"
+      },
+      {
+        "key": "dtic:AD0817973",
+        "i": 22,
+        "title": "AN INVESTIGATION OF THE DEBRIS CLOUD PRODUCED BY THE IMPACT OF SPHERES ON THIN METAL SHEETS"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-011",
+    "question": "What was the peak pressure of the shock wave generated in the experiment?",
+    "gold": "110,000 psi",
+    "prediction": "The peak pressures measured were 637 and 593 GPa for the samples exposed to shock velocities of 20.14 and 19.53 km/s, respectively [1].",
+    "token_f1": 0.0,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "osti:3013886",
+        "i": 12,
+        "title": "Accessing terapascal pressures on two-stage light-gas guns for high-energy-density research"
+      },
+      {
+        "key": "ntrs:19700012297",
+        "i": 66,
+        "title": "Experimental hypervelocity impact research program Final report, Jul. 1966 - Dec. 1967"
+      },
+      {
+        "key": "ntrs:19660028233",
+        "i": 1,
+        "title": "Measurements of shock wave pressures generated by hypervelocity impacts in aluminum"
+      },
+      {
+        "key": "ntrs:19710017543",
+        "i": 7,
+        "title": "A shock wave study of Coconino sandstone"
+      },
+      {
+        "key": "dtic:AD0423798",
+        "i": 204,
+        "title": "PROCEEDINGS OF THE SIXTH SYMPOSIUM ON HYPERVELOCITY IMPACT, 30 APRIL-2 May 1963, CLEVELAND, OHIO, VOLUME 1"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-012",
+    "question": "What material were the spherical projectiles made of?",
+    "gold": "Pyrex",
+    "prediction": "Aluminum [1, 2, 3, 4, 5].",
+    "token_f1": 0.0,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "ntrs:19660004002",
+        "i": 7,
+        "title": "Investigation of characteristics of pressure waves generated in water filled tanks impacted by high-velocity projectiles"
+      },
+      {
+        "key": "dtic:AD0423064",
+        "i": 135,
+        "title": "PROCEEDINGS OF THE SIXTH SYMPOSIUM ON HYPERVELOCITY IMPACT, CLEVELAND, OHIO, APRIL 30, MAY 1, 2, 1963, SPONSORED BY: U.S. ARMY, U.S. AIR FORCE, U.S. NAVY. VOLUME 2, PART 2"
+      },
+      {
+        "key": "ntrs:19660012978",
+        "i": 34,
+        "title": "Hypervelocity impact effects on liquid hydrogen tanks Final report, 1 Jul. 1964 - 30 Nov. 1965"
+      },
+      {
+        "key": "dtic:AD0415617",
+        "i": 42,
+        "title": "SPHERICAL SHOCK WAVES IN SOLIDS"
+      },
+      {
+        "key": "ntrs:19680010299",
+        "i": 9,
+        "title": "Hypervelocity impact damage in aluminum targets Final report"
+      }
+    ],
+    "hit_at_k": 0.0
+  },
+  {
+    "qid": "synth-013",
+    "question": "What is the range of projectile masses that the light gas gun can accommodate?",
+    "gold": "0.0004 to 2.1 grams",
+    "prediction": "The light gas gun can accommodate projectile masses ranging from 0.0004 to 2.1 grams [3].",
+    "token_f1": 0.47058823529411764,
+    "substring_hit": 1.0,
+    "retrieved": [
+      {
+        "key": "ntrs:19660012978",
+        "i": 33,
+        "title": "Hypervelocity impact effects on liquid hydrogen tanks Final report, 1 Jul. 1964 - 30 Nov. 1965"
+      },
+      {
+        "key": "ntrs:20220013697",
+        "i": 0,
+        "title": "An Efficient and Effective Light Gas Gun Design for Millimeter-scale Hypervelocity Testing"
+      },
+      {
+        "key": "ntrs:20030079974",
+        "i": 6,
+        "title": "Hypervelocity Impact Test Results for a Metallic Thermal Protection System"
+      },
+      {
+        "key": "ntrs:19930013798",
+        "i": 6,
+        "title": "Concept definition study for an extremely large aerophysics range facility"
+      },
+      {
+        "key": "ntrs:19680000288",
+        "i": 0,
+        "title": "Advances in light-gas gun technology"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-015",
+    "question": "What technique is used for the fabrication of Mg-Ti system alloy and FGM with density gradient?",
+    "gold": "spark plasma sintering technique",
+    "prediction": "Prior work by Qiang et al. used CAPAD to fabricate a Mg-Ti gradient density material [1].",
+    "token_f1": 0.0,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "osti:2586585",
+        "i": 15,
+        "title": "Al\u2013W gradient density materials\u2014Processing and dynamic ramp compression"
+      },
+      {
+        "key": "osti:3374165",
+        "i": 2,
+        "title": "Deposition of very thick Mo-Al multilayer films using magnetron sputtering"
+      },
+      {
+        "key": "ntrs:20070030178",
+        "i": 16,
+        "title": "Extravehicular Mobility Unit Penetration Probability from Micrometeoroids and Orbital Debris: Revised Analytical Model and Potential Space Suit Improvements"
+      },
+      {
+        "key": "dtic:ADA272957",
+        "i": 247,
+        "title": "Hypervelocity Impact: Proceedings of the 1992 Symposium Held in Austin, Texas on 17-19 November 1992"
+      },
+      {
+        "key": "ntrs:19980236871",
+        "i": 11,
+        "title": "Results of Two-Stage Light-Gas Gun Development Efforts and Hypervelocity Impact Tests of Advanced Thermal Protection Materials"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-016",
+    "question": "What condition marks the end of Phase I and the start of Phase II in the penetration process?",
+    "gold": "The decreasing head velocity reaches steady state velocity.",
+    "prediction": "The end of Phase I and the start of Phase II in the penetration process is marked by time \\( t_1 \\), which signifies the beginning of the steady-state period [5].",
+    "token_f1": 0.0,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "dtic:ADA168186",
+        "i": 10,
+        "title": "Radial Expansion of Cavities Produced by the Axisymmetric Steady Penetration of Hypervelocity Rods"
+      },
+      {
+        "key": "dtic:ADA272957",
+        "i": 23,
+        "title": "Hypervelocity Impact: Proceedings of the 1992 Symposium Held in Austin, Texas on 17-19 November 1992"
+      },
+      {
+        "key": "dtic:ADA031643",
+        "i": 231,
+        "title": "Kinetics of Shock-Induced Phase Transitions."
+      },
+      {
+        "key": "dtic:ADA264728",
+        "i": 22,
+        "title": "A Ceramic Fracture Model for High Velocity Impact"
+      },
+      {
+        "key": "dtic:ADA043845",
+        "i": 17,
+        "title": "Shaped Charge Jet Penetration of Discontinuous Media"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-017",
+    "question": "What is the velocity of the projectile when it has moved 5 inches due to a pressure increase from 50,000 psi to 60,000 psi?",
+    "gold": "9,000 ft/sec",
+    "prediction": "The velocity of the projectile when it has moved 5 inches, due to a pressure increase from 50,000 psi to 60,000 psi, is 9,000 ft/sec [3].",
+    "token_f1": 0.16666666666666669,
+    "substring_hit": 1.0,
+    "retrieved": [
+      {
+        "key": "ntrs:19930085001",
+        "i": 89,
+        "title": "Development of a Piston-compressor Type Light-gas Gun for the Launching of Free-flight Models at High Velocity"
+      },
+      {
+        "key": "ntrs:19730003723",
+        "i": 32,
+        "title": "Optimization of a two stage light gas gun"
+      },
+      {
+        "key": "ntrs:19930093745",
+        "i": 90,
+        "title": "Development of a high-velocity free-flight launcher : the Ames light-gas gun"
+      },
+      {
+        "key": "dtic:AD0423798",
+        "i": 37,
+        "title": "PROCEEDINGS OF THE SIXTH SYMPOSIUM ON HYPERVELOCITY IMPACT, 30 APRIL-2 May 1963, CLEVELAND, OHIO, VOLUME 1"
+      },
+      {
+        "key": "dtic:AD0284282",
+        "i": 42,
+        "title": "PROCEEDINGS OF THE FIFTH SYMPOSIUM ON HYPERVELOCITY IMPACT, DENVER, OCTOBER 30, 31, NOVEMBER 1, 1961, VOLUME I - PART I"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-018",
+    "question": "What material were the pistons made of in the last series of CFD calculations?",
+    "gold": "polyethylene",
+    "prediction": "High-density polyethylene [1].",
+    "token_f1": 0.6666666666666666,
+    "substring_hit": 1.0,
+    "retrieved": [
+      {
+        "key": "ntrs:19980211345",
+        "i": 5,
+        "title": "Optimization Study of the Ames 0.5 Two-Stage Light Gas Gun"
+      },
+      {
+        "key": "ntrs:20205008987",
+        "i": 36,
+        "title": "LGGUN User's Manual"
+      },
+      {
+        "key": "ntrs:20205011413",
+        "i": 23,
+        "title": "A Study of the Swelling and Bursting of the High Pressure Coupling (HPC) of a Two-Stage Light Gas Gun"
+      },
+      {
+        "key": "ntrs:19960008802",
+        "i": 66,
+        "title": "New higher-order Godunov code for modelling performance of two-stage light gas guns"
+      },
+      {
+        "key": "ntrs:19990007798",
+        "i": 29,
+        "title": "CFD Modelling of Bore Erosion in Two-Stage Light Gas Guns"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-019",
+    "question": "What defines hypervelocity for most conventional metallic penetrators according to this report?",
+    "gold": "an impact velocity greater than 1 km/s",
+    "prediction": "An impact velocity greater than 1 km/s defines hypervelocity for most conventional metallic penetrators according to the report [1].",
+    "token_f1": 0.5454545454545454,
+    "substring_hit": 1.0,
+    "retrieved": [
+      {
+        "key": "dtic:ADA168186",
+        "i": 8,
+        "title": "Radial Expansion of Cavities Produced by the Axisymmetric Steady Penetration of Hypervelocity Rods"
+      },
+      {
+        "key": "dtic:ADA272957",
+        "i": 167,
+        "title": "Hypervelocity Impact: Proceedings of the 1992 Symposium Held in Austin, Texas on 17-19 November 1992"
+      },
+      {
+        "key": "ntrs:19650015410",
+        "i": 117,
+        "title": "A bibliography concerning aspects of the meteoroid hazard"
+      },
+      {
+        "key": "dtic:ADA479917",
+        "i": 1,
+        "title": "Re-Visiting 1-D Hypervelocity Penetration (Preprint)"
+      },
+      {
+        "key": "dtic:AD0423063",
+        "i": 4,
+        "title": "PROCEEDINGS OF THE SIXTH SYMPOSIUM ON HYPERVELOCITY IMPACT, CLEVELAND, OHIO, APRIL 30-May 2, 1963. Volume 2, Part 1"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-020",
+    "question": "What is the maximum velocity observed using iron spheres in the two million volt Van de Graaf positive ion accelerator?",
+    "gold": "14 km/sec",
+    "prediction": "Final velocities up to 14 km/sec have been observed using iron spheres in the two million volt Van de Graaf positive ion accelerator [1, 3, 4].",
+    "token_f1": 0.16666666666666669,
+    "substring_hit": 1.0,
+    "retrieved": [
+      {
+        "key": "ntrs:19660007418",
+        "i": 44,
+        "title": "Investigation of high-speed impact phenomena /III/, volume I"
+      },
+      {
+        "key": "ntrs:19650015410",
+        "i": 179,
+        "title": "A bibliography concerning aspects of the meteoroid hazard"
+      },
+      {
+        "key": "ntrs:19660011806",
+        "i": 5,
+        "title": "Experiments on the impact-light-flash at high velocities"
+      },
+      {
+        "key": "dtic:ADA272957",
+        "i": 1315,
+        "title": "Hypervelocity Impact: Proceedings of the 1992 Symposium Held in Austin, Texas on 17-19 November 1992"
+      },
+      {
+        "key": "dtic:AD0284282",
+        "i": 104,
+        "title": "PROCEEDINGS OF THE FIFTH SYMPOSIUM ON HYPERVELOCITY IMPACT, DENVER, OCTOBER 30, 31, NOVEMBER 1, 1961, VOLUME I - PART I"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-021",
+    "question": "What was the voltage of the electrostatic accelerator discussed in the paper by J. F. Friichtenicht?",
+    "gold": "Two million volts",
+    "prediction": "A 2,000,000-V Van de Graaff positive ion accelerator was modified to accelerate micron-sized charged particles [2].",
+    "token_f1": 0.0,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "dtic:AD0284282",
+        "i": 92,
+        "title": "PROCEEDINGS OF THE FIFTH SYMPOSIUM ON HYPERVELOCITY IMPACT, DENVER, OCTOBER 30, 31, NOVEMBER 1, 1961, VOLUME I - PART I"
+      },
+      {
+        "key": "ntrs:19660007418",
+        "i": 44,
+        "title": "Investigation of high-speed impact phenomena /III/, volume I"
+      },
+      {
+        "key": "ntrs:19650019031",
+        "i": 0,
+        "title": "Particle parameter selection system for an electrostatic particle accelerator"
+      },
+      {
+        "key": "dtic:AD0271470",
+        "i": 9,
+        "title": "HIGH-VELOCITY IMPACT STUDIES"
+      },
+      {
+        "key": "ntrs:19700011275",
+        "i": 1,
+        "title": "Investigation of hypervelocity microparticles impact phenomena"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-022",
+    "question": "What pattern did the melts from near the surface of the target follow when ejected according to Natalia Artemieva and Betty Pierazzo's study using the 3-D hydrocode SOVA?",
+    "gold": "melt originating from near the surface of the target was ejected in two streams concentrated on either side of the down range projection of the impactor\u2019s flight path.",
+    "prediction": "Using the 3-D hydrocode SOVA, Natalia Artemieva and Betty Pierazzo showed that melt originating from near the surface of the target was ejected in two streams concentrated on either side of the downrange projection of the impactor\u2019s flight path [1].",
+    "token_f1": 0.7586206896551724,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "ntrs:20030079993",
+        "i": 47,
+        "title": "Results of the Workshop on Impact Cratering: Bridging the Gap Between Modeling and Observations"
+      },
+      {
+        "key": "ntrs:19850015163",
+        "i": 271,
+        "title": "Reports of Planetary Geology and Geophysics Program, 1984"
+      },
+      {
+        "key": "osti:3011925",
+        "i": 25,
+        "title": "Modeling of melting and erosion in high velocity microparticle impacts"
+      },
+      {
+        "key": "ntrs:20030014839",
+        "i": 18,
+        "title": "Impact Cratering: Bridging the Gap Between Modeling and Observations"
+      },
+      {
+        "key": "osti:2584205",
+        "i": 19,
+        "title": "Platinum liquid-vapor phase boundary mapped by fluid flyer experiments"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-023",
+    "question": "What is the pressure generated by the impact of a 8.2-gram titanium disc on a 0.100-inch aluminum plate at 3.7 km/sec?",
+    "gold": "478 kilobars",
+    "prediction": "Based on the information provided, there is no specific pressure value given for the impact of an 8.2-gram titanium disc on a 0.100-inch aluminum plate at 3.7 km/sec. The closest data provided is in source [4], which details impacts of aluminum spheres into aluminum targets but does not include the exact parameters you specified.",
+    "token_f1": 0.0,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "dtic:AD0284280",
+        "i": 252,
+        "title": "PROCEEDINGS OF THE FIFTH SYMPOSIUM ON HYPERVELOCITY IMPACT. DENVER, OCTOBER 30, 31, NOVEMBER 1, 1961, VOLUME I - PART 2"
+      },
+      {
+        "key": "dtic:ADA088152",
+        "i": 13,
+        "title": "Shock Compression of Tantalum."
+      },
+      {
+        "key": "dtic:AD0423798",
+        "i": 255,
+        "title": "PROCEEDINGS OF THE SIXTH SYMPOSIUM ON HYPERVELOCITY IMPACT, 30 APRIL-2 May 1963, CLEVELAND, OHIO, VOLUME 1"
+      },
+      {
+        "key": "ntrs:19660028233",
+        "i": 11,
+        "title": "Measurements of shock wave pressures generated by hypervelocity impacts in aluminum"
+      },
+      {
+        "key": "dtic:AD0423802",
+        "i": 90,
+        "title": "PROCEEDINGS OF THE SYMPOSIUM ON HYPERVELOCITY IMPACT (6th), HELD IN CLEVELAND, OHIO, APRIL 30-MAY 2, 1963. VOLUME 3"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-025",
+    "question": "Why is tantalum preferred over rhenium as the liner/coating material for two-stage light gas guns?",
+    "gold": "Tantalum has a much greater ductility than rhenium and hence, will better be able to follow the thermal and pressure stresses and strains of gun firing without cracking.",
+    "prediction": "Tantalum is preferred over rhenium because it has better ductility and a lower Young's modulus, which allows it to better follow the thermal and pressure stresses and strains of gun firing without cracking [2].",
+    "token_f1": 0.6666666666666667,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "ntrs:20190000250",
+        "i": 38,
+        "title": "Design of a Two-Stage Light Gas Gun for Muzzle Velocities of 10 - 11 km/s"
+      },
+      {
+        "key": "ntrs:20160005034",
+        "i": 32,
+        "title": "Use of a Tantalum Liner to Reduce Bore Erosion and Increase Muzzle Velocity in Two-Stage Light Gas Guns"
+      },
+      {
+        "key": "ntrs:20205008987",
+        "i": 167,
+        "title": "LGGUN User's Manual"
+      },
+      {
+        "key": "dtic:ADA096316",
+        "i": 6,
+        "title": "Demonstration of the Integrity of Tungsten Lined Launch Tubes for Use on a Hybrid Launcher"
+      },
+      {
+        "key": "dtic:AD0423798",
+        "i": 195,
+        "title": "PROCEEDINGS OF THE SIXTH SYMPOSIUM ON HYPERVELOCITY IMPACT, 30 APRIL-2 May 1963, CLEVELAND, OHIO, VOLUME 1"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-026",
+    "question": "What was the constant projectile mass used in the initial charge pressure tests?",
+    "gold": "0.153 g",
+    "prediction": "The initial parametric sensitivity study used a projectile mass of 0.153g [1].",
+    "token_f1": 0.0,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "ntrs:20010066711",
+        "i": 28,
+        "title": "A New Technique for Achieving Impact Velocities Greater Than 10 km/sec"
+      },
+      {
+        "key": "dtic:AD0350318",
+        "i": 41,
+        "title": "AUTOMATIC LIGHT GAS GUN DEVELOPMENT"
+      },
+      {
+        "key": "dtic:AD0423798",
+        "i": 160,
+        "title": "PROCEEDINGS OF THE SIXTH SYMPOSIUM ON HYPERVELOCITY IMPACT, 30 APRIL-2 May 1963, CLEVELAND, OHIO, VOLUME 1"
+      },
+      {
+        "key": "ntrs:19630006152",
+        "i": 17,
+        "title": "Study of Principles of Meteroid Protection"
+      },
+      {
+        "key": "ntrs:19680019455",
+        "i": 26,
+        "title": "Development of a micrometeoroid simulation device, constant area accelerator, volume 2"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-027",
+    "question": "What type of symmetry is considered when the radial position is involved in the analysis of the blast wave?",
+    "gold": "planar symmetry",
+    "prediction": "Cylindrical symmetry [3].",
+    "token_f1": 0.5,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "ntrs:19650012024",
+        "i": 90,
+        "title": "Nonsimilar solutions for impact-generated shock propagation in solids final report"
+      },
+      {
+        "key": "dtic:AD0423063",
+        "i": 127,
+        "title": "PROCEEDINGS OF THE SIXTH SYMPOSIUM ON HYPERVELOCITY IMPACT, CLEVELAND, OHIO, APRIL 30-May 2, 1963. Volume 2, Part 1"
+      },
+      {
+        "key": "ntrs:19720006212",
+        "i": 68,
+        "title": "Meteoroid-bumper interactions program"
+      },
+      {
+        "key": "ntrs:19630007011",
+        "i": 125,
+        "title": "A Study of Meteoroid Impact Phenomena"
+      },
+      {
+        "key": "dtic:AD0718461",
+        "i": 193,
+        "title": "Hypervelocity Impact -- Material Strength Effects on Crater Formation and Shock Propagation in Three Aluminum Alloys"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-028",
+    "question": "What was the purpose of using a very short final launch tube in tests 5 and 6?",
+    "gold": "to determine that the C-4 explosive could withstand initial acceleration without detonation",
+    "prediction": "The sources do not provide specific information about the purpose of using a very short final launch tube in tests 5 and 6.",
+    "token_f1": 0.0,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "ntrs:19680019455",
+        "i": 36,
+        "title": "Development of a micrometeoroid simulation device, constant area accelerator, volume 2"
+      },
+      {
+        "key": "dtic:AD0350318",
+        "i": 27,
+        "title": "AUTOMATIC LIGHT GAS GUN DEVELOPMENT"
+      },
+      {
+        "key": "ntrs:20010066711",
+        "i": 45,
+        "title": "A New Technique for Achieving Impact Velocities Greater Than 10 km/sec"
+      },
+      {
+        "key": "ntrs:20220012773",
+        "i": 6,
+        "title": "An Efficient and Effective Light Gas Gun Design for Millimeter-Scale Hypervelocity Testing"
+      },
+      {
+        "key": "ntrs:20230015532",
+        "i": 6,
+        "title": "An Efficient and Effective Light Gas Gun Design for Millimeter-Scale Hypervelocity Testing"
+      }
+    ],
+    "hit_at_k": 0.0
+  },
+  {
+    "qid": "synth-029",
+    "question": "What was the peak velocity of WS-11 near the center of symmetry compared to WS-12?",
+    "gold": "WS-11 had a peak velocity of about 140 m/s compared to 300 m/s for WS-12.",
+    "prediction": "The peak velocity for WS-11 near the center of symmetry (tracer 7) is about 140 m/s, while for WS-12 it is about 300 m/s [1].",
+    "token_f1": 0.6111111111111112,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "dtic:ADA272123",
+        "i": 42,
+        "title": "Numerical Simulations of Hypervelocity Impact Experiments Involving Single Whipple Bumper Shields"
+      },
+      {
+        "key": "dtic:ADA272957",
+        "i": 1304,
+        "title": "Hypervelocity Impact: Proceedings of the 1992 Symposium Held in Austin, Texas on 17-19 November 1992"
+      },
+      {
+        "key": "dtic:ADA053377",
+        "i": 43,
+        "title": "Computer Study of the Effects of Rod Diameter and Target Thickness on the Penetration Process."
+      },
+      {
+        "key": "dtic:ADA003904",
+        "i": 22,
+        "title": "An Experimental Investigation of Late-Stage Equivalence for the Axial Hypo- and Hypervelocity Impact of Rods"
+      },
+      {
+        "key": "dtic:ADA186489",
+        "i": 75,
+        "title": "United States Air Force Research Initiation Program. 1984 Research Reports. Volume 1."
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-030",
+    "question": "What is the thickness of the aluminum plates used in the Meteoroid and Space Debris Impact Experiment?",
+    "gold": "4.8 mm",
+    "prediction": "The aluminum plates used in the Meteoroid and Space Debris Impact Experiment were 4.8 mm thick [1].",
+    "token_f1": 0.25,
+    "substring_hit": 1.0,
+    "retrieved": [
+      {
+        "key": "ntrs:19950017376",
+        "i": 355,
+        "title": "LDEF: 69 Months in Space. Third Post-Retrieval Symposium, part 1"
+      },
+      {
+        "key": "ntrs:19910015658",
+        "i": 41,
+        "title": "First LDEF Post-Retrieval Symposium abstracts"
+      },
+      {
+        "key": "ntrs:19660012978",
+        "i": 91,
+        "title": "Hypervelocity impact effects on liquid hydrogen tanks Final report, 1 Jul. 1964 - 30 Nov. 1965"
+      },
+      {
+        "key": "dtic:ADA272957",
+        "i": 271,
+        "title": "Hypervelocity Impact: Proceedings of the 1992 Symposium Held in Austin, Texas on 17-19 November 1992"
+      },
+      {
+        "key": "ntrs:19890012379",
+        "i": 7,
+        "title": "Further investigations of oblique hypervelocity impact phenomena"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-031",
+    "question": "What phase does silicon carbide (SiC) convert to at the first recorded time of 1.8 nanoseconds?",
+    "gold": "B1 phase",
+    "prediction": "Based on the information provided in source [1], silicon carbide (SiC) transforms from its low-pressure tetrahedrally coordinated structure to the octahedrally coordinated rocksalt (B1) phase at approximately 120 GPa on nanosecond time scales. Since 1.8 nanoseconds falls within the nanosecond time scale mentioned, it can be inferred that SiC converts to the B1 phase at around 1.8 nanoseconds.",
+    "token_f1": 0.07407407407407407,
+    "substring_hit": 1.0,
+    "retrieved": [
+      {
+        "key": "osti:1406133",
+        "i": 1,
+        "title": "High-pressure polymorphism of two high-strength ceramics: Boron carbide (B4C) and silicon carbide (SiC)"
+      },
+      {
+        "key": "ntrs:20090021990",
+        "i": 210,
+        "title": "2007 Research and Technology"
+      },
+      {
+        "key": "dtic:ADA388072",
+        "i": 0,
+        "title": "Tensile Strengths of Silicon Carbide (SiC) Under Shock Loading"
+      },
+      {
+        "key": "dtic:ADA611186",
+        "i": 182,
+        "title": "Electrosprayed Heavy Ion and Nanodrop Beams for Surface Engineering and Electrical Propulsion"
+      },
+      {
+        "key": "osti:2588440",
+        "i": 57,
+        "title": "Time-domain theory of transient heat conduction in the local limit"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-032",
+    "question": "What value of K was used for 5052 aluminum in the study?",
+    "gold": "680 joules/cc",
+    "prediction": "The sources do not provide a specific value for K (or K_H and K_L) for 5052 aluminum.",
+    "token_f1": 0.0,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "ntrs:19710027338",
+        "i": 107,
+        "title": "Composite overwrapped metallic tanks"
+      },
+      {
+        "key": "dtic:ADA429821",
+        "i": 97,
+        "title": "Hypervelocity Impact Analysis of International Space Station Whipple and Enhanced Stuffed Whipple Shields"
+      },
+      {
+        "key": "dtic:ADA279812",
+        "i": 115,
+        "title": "Debris Cloud Material Characterization for Hypervelocity Impacts of Single- and Multi-Material Projectiles on Thin Target Plates"
+      },
+      {
+        "key": "dtic:AD0284280",
+        "i": 14,
+        "title": "PROCEEDINGS OF THE FIFTH SYMPOSIUM ON HYPERVELOCITY IMPACT. DENVER, OCTOBER 30, 31, NOVEMBER 1, 1961, VOLUME I - PART 2"
+      },
+      {
+        "key": "dtic:AD0746955",
+        "i": 27,
+        "title": "The Effect of Aging Time on Spallation of 2024-T6 Aluminum"
+      }
+    ],
+    "hit_at_k": 0.0
+  },
+  {
+    "qid": "synth-033",
+    "question": "What was the initial kinetic energy of the basalt sphere projectile in ergs?",
+    "gold": "5.0695 x 10^25 ergs",
+    "prediction": "The initial kinetic energy of the basalt sphere projectile was \\(5.0695 \\times 10^{25}\\) ergs [2].",
+    "token_f1": 0.375,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "dtic:AD0423064",
+        "i": 70,
+        "title": "PROCEEDINGS OF THE SIXTH SYMPOSIUM ON HYPERVELOCITY IMPACT, CLEVELAND, OHIO, APRIL 30, MAY 1, 2, 1963, SPONSORED BY: U.S. ARMY, U.S. AIR FORCE, U.S. NAVY. VOLUME 2, PART 2"
+      },
+      {
+        "key": "ntrs:19720008598",
+        "i": 35,
+        "title": "Hypervelocity impact cratering calculations"
+      },
+      {
+        "key": "dtic:ADA004320",
+        "i": 19,
+        "title": "Measurement of Ballistic Impact Flash"
+      },
+      {
+        "key": "ntrs:19680008092",
+        "i": 13,
+        "title": "Experimental investigation of the impact characteristics on non-metallic materials Annual report, Jun. 6, 1966 - May 31, 1967"
+      },
+      {
+        "key": "ntrs:19630004711",
+        "i": 40,
+        "title": "Spray Ejected from the Lunar Surface by Meteoroid Impact"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-034",
+    "question": "What is the diameter of the projectile used in the TFE Teflon target perforation experiments?",
+    "gold": "100 microns",
+    "prediction": "The projectile diameter used in the TFE Teflon target perforation experiments was 3175 \u03bcm [2, 3].",
+    "token_f1": 0.0,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "ntrs:19910015658",
+        "i": 64,
+        "title": "First LDEF Post-Retrieval Symposium abstracts"
+      },
+      {
+        "key": "ntrs:19950007233",
+        "i": 0,
+        "title": "Cratering and penetration experiments in teflon targets at velocities from 1 to 7 km/s"
+      },
+      {
+        "key": "dtic:ADA272957",
+        "i": 679,
+        "title": "Hypervelocity Impact: Proceedings of the 1992 Symposium Held in Austin, Texas on 17-19 November 1992"
+      },
+      {
+        "key": "ntrs:19950017376",
+        "i": 661,
+        "title": "LDEF: 69 Months in Space. Third Post-Retrieval Symposium, part 1"
+      },
+      {
+        "key": "ntrs:19940006210",
+        "i": 102,
+        "title": "Dimensional scaling for impact cratering and perforation"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-035",
+    "question": "What percentage of the total shield mass can be composed of the support structure mass for multi-stage shields?",
+    "gold": "Up to eight percent",
+    "prediction": "Up to eight percent of total shield mass can be composed of the support structure mass for multi-stage shields [1].",
+    "token_f1": 0.3636363636363636,
+    "substring_hit": 1.0,
+    "retrieved": [
+      {
+        "key": "dtic:ADA429821",
+        "i": 48,
+        "title": "Hypervelocity Impact Analysis of International Space Station Whipple and Enhanced Stuffed Whipple Shields"
+      },
+      {
+        "key": "ntrs:20030068423",
+        "i": 47,
+        "title": "Meteoroid/Debris Shielding"
+      },
+      {
+        "key": "ntrs:20190033908",
+        "i": 3,
+        "title": "Considerations of Oblique Impacts of Non-Spherical, Graphite-Epoxy Projectiles"
+      },
+      {
+        "key": "ntrs:20250001790",
+        "i": 4,
+        "title": "Evaluating Basalt Fabric in Stuffed Whipple and Multishock Shields Through Comparative Hypervelocity Tests"
+      },
+      {
+        "key": "dtic:ADA272957",
+        "i": 899,
+        "title": "Hypervelocity Impact: Proceedings of the 1992 Symposium Held in Austin, Texas on 17-19 November 1992"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-037",
+    "question": "What is the typical internal consistency between the three types of velocity sensors used on the light-gas guns?",
+    "gold": "typically <1%",
+    "prediction": "The internal consistency between all three types of velocity sensors utilized on the two light-gas guns is <2%, and typically <1% [3].",
+    "token_f1": 0.1904761904761905,
+    "substring_hit": 1.0,
+    "retrieved": [
+      {
+        "key": "dtic:AD0284282",
+        "i": 69,
+        "title": "PROCEEDINGS OF THE FIFTH SYMPOSIUM ON HYPERVELOCITY IMPACT, DENVER, OCTOBER 30, 31, NOVEMBER 1, 1961, VOLUME I - PART I"
+      },
+      {
+        "key": "dtic:AD0291822",
+        "i": 16,
+        "title": "Terminal Ballistic Investigation of the Impact and Effect of Ultra High Speed Micron-Size Particles Produced on Hypervelocity Impact"
+      },
+      {
+        "key": "ntrs:19950007233",
+        "i": 10,
+        "title": "Cratering and penetration experiments in teflon targets at velocities from 1 to 7 km/s"
+      },
+      {
+        "key": "ntrs:20080026200",
+        "i": 9,
+        "title": "Laboratory Simulation of Impacts upon Aluminum Foils of the Stardust Spacecraft: Calibration of Dust Particle Size from Comet Wild 2"
+      },
+      {
+        "key": "dtic:ADA240804",
+        "i": 44,
+        "title": "Investigation of Highly Pressurized Two-Phase, Reacting Flow"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-038",
+    "question": "What is the expected pressure rise at the time of shock arrival if there is no detonation?",
+    "gold": "about 275 atm",
+    "prediction": "The expected pressure rise at the time of shock arrival if there is no detonation is about 275 atm [1].",
+    "token_f1": 0.3,
+    "substring_hit": 1.0,
+    "retrieved": [
+      {
+        "key": "dtic:ADA208268",
+        "i": 86,
+        "title": "Demonstration of Oblique Detonation Wave for Hypersonic Propulsion"
+      },
+      {
+        "key": "dtic:AD0415617",
+        "i": 27,
+        "title": "SPHERICAL SHOCK WAVES IN SOLIDS"
+      },
+      {
+        "key": "ntrs:19680006308",
+        "i": 32,
+        "title": "Explosive hypervelocity launchers"
+      },
+      {
+        "key": "dtic:AD0661833",
+        "i": 23,
+        "title": "PENETRATION MECHANICS AND POST-PERFORATION EFFECTS IN AN ALUMINUM- ALUMINUM IMPACT SYSTEM"
+      },
+      {
+        "key": "dtic:AD0466558",
+        "i": 15,
+        "title": "OXIDATIVE DETONATIONS INITIATED BY HIGH VELOCITY IMPACTS"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-040",
+    "question": "What method was used to synchronize the four signals in time?",
+    "gold": "Synchronization of the four signals in time was achieved by means of a fiducial pulse received simultaneously at each oscilloscope.",
+    "prediction": "A sharp pulse at current peak was used as a fiducial mark to indicate the time at which impact occurs. This pulse arrives at each oscilloscope 100us after the oscilloscope trigger.",
+    "token_f1": 0.3111111111111111,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "ntrs:19790016565",
+        "i": 8,
+        "title": "Precise terrestrial time: A means for improved ballistic missile guidance analysis"
+      },
+      {
+        "key": "ntrs:19830027853",
+        "i": 113,
+        "title": "Shock-wave properties and high-pressure equations of state of geophysically important materials"
+      },
+      {
+        "key": "ntrs:20200003162",
+        "i": 78,
+        "title": "NESC Composite Overwrapped Pressure Vessel Hypervelocity Impact Study: Phase A\u2013Acoustic Emission Review"
+      },
+      {
+        "key": "dtic:AD0718461",
+        "i": 264,
+        "title": "Hypervelocity Impact -- Material Strength Effects on Crater Formation and Shock Propagation in Three Aluminum Alloys"
+      },
+      {
+        "key": "ntrs:19660011806",
+        "i": 24,
+        "title": "Experiments on the impact-light-flash at high velocities"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-041",
+    "question": "What happens to the muzzle direction of a light gas gun when the projectile is launched?",
+    "gold": "The muzzle is no longer pointing where it was initially aimed.",
+    "prediction": "The light gas gun moves rearward (upstream) due to the piston movement and the gas column's movement, but the center of gravity (c.g.) remains fixed in the laboratory frame-of-reference [1].",
+    "token_f1": 0.0,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "ntrs:19930013798",
+        "i": 81,
+        "title": "Concept definition study for an extremely large aerophysics range facility"
+      },
+      {
+        "key": "dtic:AD0423798",
+        "i": 39,
+        "title": "PROCEEDINGS OF THE SIXTH SYMPOSIUM ON HYPERVELOCITY IMPACT, 30 APRIL-2 May 1963, CLEVELAND, OHIO, VOLUME 1"
+      },
+      {
+        "key": "dtic:ADA272957",
+        "i": 1113,
+        "title": "Hypervelocity Impact: Proceedings of the 1992 Symposium Held in Austin, Texas on 17-19 November 1992"
+      },
+      {
+        "key": "dtic:ADA485255",
+        "i": 6,
+        "title": "Design of 50MM Powder to Air to Light Gas Gun Converter"
+      },
+      {
+        "key": "ntrs:19930093745",
+        "i": 25,
+        "title": "Development of a high-velocity free-flight launcher : the Ames light-gas gun"
+      }
+    ],
+    "hit_at_k": 0.0
+  },
+  {
+    "qid": "synth-042",
+    "question": "What is the minimum efficiency of the GaAs solar cell modules used in the study, excluding the two modules with low efficiency strings?",
+    "gold": "above 18%",
+    "prediction": "The minimum efficiency of the GaAs solar cell modules used in the study, excluding the two modules with low efficiency strings, was above 18%. [1]",
+    "token_f1": 0.18181818181818182,
+    "substring_hit": 1.0,
+    "retrieved": [
+      {
+        "key": "ntrs:20010056310",
+        "i": 0,
+        "title": "Hypervelocity Impact Studies on Solar Cell Modules"
+      },
+      {
+        "key": "ntrs:20160005691",
+        "i": 2,
+        "title": "Micrometeorite Impact Test of Flex Solar Array Coupon"
+      },
+      {
+        "key": "ntrs:19690011654",
+        "i": 9,
+        "title": "Performance of N/p silicon and cadmium sulfide solar cells as affected by hypervelocity particle impact"
+      },
+      {
+        "key": "ntrs:19940024880",
+        "i": 10,
+        "title": "Hypervelocity Impact Testing of Space Station Freedom Solar Cells"
+      },
+      {
+        "key": "ntrs:19710014432",
+        "i": 15,
+        "title": "Hypervelocity particle accelerator evaluation"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-043",
+    "question": "What was the purpose of providing a joint in the high-pressure breech at the junction of the conical carrier seat and the straight cylindrical pump tube?",
+    "gold": "The objective was to allow separation of the tube from the coupling after firing and to make close inspection of the forward breech easier.",
+    "prediction": "The purpose of providing a joint in the high-pressure breech was to permit uncoupling of the two components at the area of most interest, facilitating inspection after firing [1].",
+    "token_f1": 0.37209302325581395,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "dtic:AD0357373",
+        "i": 10,
+        "title": "AUTOMATIC LIGHT GAS GUN DEVELOPMENT"
+      },
+      {
+        "key": "dtic:AD0350318",
+        "i": 19,
+        "title": "AUTOMATIC LIGHT GAS GUN DEVELOPMENT"
+      },
+      {
+        "key": "dtic:AD0263890",
+        "i": 3,
+        "title": "LIGHT-GAS GUN FOR PRODUCTION OF SHOCK PRESSURE IN SOLIDS"
+      },
+      {
+        "key": "dtic:ADA275054",
+        "i": 13,
+        "title": "Transient Internal Probe"
+      },
+      {
+        "key": "ntrs:19660009047",
+        "i": 2,
+        "title": "The Ames 102 - 25.4-88 Light-gas-gun Model Launcher"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-044",
+    "question": "What was the maximum percentage decrease in diameter observed for the sabots as they accelerated down the gun barrel?",
+    "gold": "3.1 percent",
+    "prediction": "3.1 percent [1].",
+    "token_f1": 1.0,
+    "substring_hit": 1.0,
+    "retrieved": [
+      {
+        "key": "ntrs:19980218618",
+        "i": 10,
+        "title": "Recent Developments in Gun Operating Techniques at the NASA Ames Ballistic Ranges"
+      },
+      {
+        "key": "ntrs:19680002188",
+        "i": 1,
+        "title": "Experimental investigation of a sabot stripping method for a 0.5 inch light gas gun Final report"
+      },
+      {
+        "key": "dtic:ADA272957",
+        "i": 626,
+        "title": "Hypervelocity Impact: Proceedings of the 1992 Symposium Held in Austin, Texas on 17-19 November 1992"
+      },
+      {
+        "key": "ntrs:19980236871",
+        "i": 5,
+        "title": "Results of Two-Stage Light-Gas Gun Development Efforts and Hypervelocity Impact Tests of Advanced Thermal Protection Materials"
+      },
+      {
+        "key": "ntrs:20190000250",
+        "i": 34,
+        "title": "Design of a Two-Stage Light Gas Gun for Muzzle Velocities of 10 - 11 km/s"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-045",
+    "question": "What material is used for the heater in the hypervelocity impact testing facility?",
+    "gold": "tungsten",
+    "prediction": "Tungsten [3].",
+    "token_f1": 1.0,
+    "substring_hit": 1.0,
+    "retrieved": [
+      {
+        "key": "ntrs:19770020458",
+        "i": 2,
+        "title": "Hypervelocity impact tests on Space Shuttle Orbiter thermal protection material"
+      },
+      {
+        "key": "ntrs:19660005476",
+        "i": 0,
+        "title": "Results of hypervelocity impacts into space radiator materials"
+      },
+      {
+        "key": "dtic:AD0394828",
+        "i": 7,
+        "title": "Continuation of Experimental Study of Small Particle Impacts into Ablative Materials"
+      },
+      {
+        "key": "dtic:AD0488517",
+        "i": 4,
+        "title": "SUMMARY OF IMPACT TESTING FOR NASA PROJECT SUPER"
+      },
+      {
+        "key": "ntrs:19930007491",
+        "i": 2,
+        "title": "Hypervelocity impact effects on solar cells"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-046",
+    "question": "What type of code was used to model the hypervelocity impact by a long rod kinetic energy penetrator?",
+    "gold": "HELP code",
+    "prediction": "The HELP code was used [1].",
+    "token_f1": 0.6666666666666666,
+    "substring_hit": 1.0,
+    "retrieved": [
+      {
+        "key": "dtic:ADA040431",
+        "i": 2,
+        "title": "Analysis of Long Rod Penetration at Hypervelocity Impact"
+      },
+      {
+        "key": "dtic:ADA272957",
+        "i": 47,
+        "title": "Hypervelocity Impact: Proceedings of the 1992 Symposium Held in Austin, Texas on 17-19 November 1992"
+      },
+      {
+        "key": "dtic:ADA043845",
+        "i": 1,
+        "title": "Shaped Charge Jet Penetration of Discontinuous Media"
+      },
+      {
+        "key": "dtic:ADA226267",
+        "i": 18,
+        "title": "Superconducting and Computational Penetration Mechanics"
+      },
+      {
+        "key": "dtic:ADA479917",
+        "i": 1,
+        "title": "Re-Visiting 1-D Hypervelocity Penetration (Preprint)"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-047",
+    "question": "Which simulation tool was used to simulate the hypervelocity impacts in the study?",
+    "gold": "CTH",
+    "prediction": "A debris cloud evolution code was used to link shield perforation and wall impact simulations [4].",
+    "token_f1": 0.0,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "ntrs:19960023311",
+        "i": 16,
+        "title": "Structural Damage Prediction and Analysis for Hypervelocity Impact: Consulting"
+      },
+      {
+        "key": "dtic:ADA041815",
+        "i": 4,
+        "title": "Laser Simulation of Hypervelocity Impact."
+      },
+      {
+        "key": "ntrs:20040191566",
+        "i": 0,
+        "title": "Hybrid Particle-Element Simulation of Impact on Composite Orbital Debris Shields"
+      },
+      {
+        "key": "ntrs:19940020355",
+        "i": 4,
+        "title": "Design of orbital debris shields for oblique hypervelocity impact"
+      },
+      {
+        "key": "ntrs:19670012739",
+        "i": 33,
+        "title": "Analytical study of the fracture of liquid- filled tanks impacted by hypervelocity particles"
+      }
+    ],
+    "hit_at_k": 0.0
+  },
+  {
+    "qid": "synth-048",
+    "question": "What was the maximum muzzle velocity achieved using the longer launch tube in the powder gun range?",
+    "gold": "8000 feet/second",
+    "prediction": "The maximum muzzle velocity achieved using the longer launch tube (five foot long) in the powder gun range was around 10,000 ft/sec [1].",
+    "token_f1": 0.0,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "dtic:AD0605836",
+        "i": 12,
+        "title": "DEVELOPMENT OF A SABOTING TECHNIQUE FOR LIGHT GAS HYPERVELOCITY PROJECTORS"
+      },
+      {
+        "key": "ntrs:19930085001",
+        "i": 5,
+        "title": "Development of a Piston-compressor Type Light-gas Gun for the Launching of Free-flight Models at High Velocity"
+      },
+      {
+        "key": "ntrs:20180007081",
+        "i": 1,
+        "title": "Preliminary Assessment of the Use of Heavy Gases in Two-Stage Light Gas Guns"
+      },
+      {
+        "key": "dtic:AD0291822",
+        "i": 10,
+        "title": "Terminal Ballistic Investigation of the Impact and Effect of Ultra High Speed Micron-Size Particles Produced on Hypervelocity Impact"
+      },
+      {
+        "key": "ntrs:20180007479",
+        "i": 3,
+        "title": "Preliminary Assessment of the Use of Heavy Gases in Two-Stage Light Gas Guns"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-049",
+    "question": "What is the typical speed range for impacts studied with long rod projectiles on thin and thick single-plate targets?",
+    "gold": "on the order of 1-3 km/sec",
+    "prediction": "The studies indicate that impacts with long rod projectiles on thin and thick single-plate targets are typically studied at velocities ranging from approximately 0.85 to 1.65 km/s [5].",
+    "token_f1": 0.06451612903225806,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "ntrs:19660008896",
+        "i": 0,
+        "title": "Impact of rod projectiles against multiple- sheet targets"
+      },
+      {
+        "key": "ntrs:19970023683",
+        "i": 9,
+        "title": "X-Ray Imaging Study"
+      },
+      {
+        "key": "dtic:AD0423802",
+        "i": 109,
+        "title": "PROCEEDINGS OF THE SYMPOSIUM ON HYPERVELOCITY IMPACT (6th), HELD IN CLEVELAND, OHIO, APRIL 30-MAY 2, 1963. VOLUME 3"
+      },
+      {
+        "key": "dtic:ADA272957",
+        "i": 718,
+        "title": "Hypervelocity Impact: Proceedings of the 1992 Symposium Held in Austin, Texas on 17-19 November 1992"
+      },
+      {
+        "key": "dtic:ADA374979",
+        "i": 7,
+        "title": "Scalability of the CTH Hydrodynamics Code on the Sun HPC 10000 Architecture"
+      }
+    ],
+    "hit_at_k": 0.0
+  },
+  {
+    "qid": "synth-051",
+    "question": "What is the range of the predicted fraction of unburned powder for IMR 4895 when the projectile exits the muzzle in the case of hydrogen working gas?",
+    "gold": "ranging from ~0.34 to ~0.47",
+    "prediction": "The predicted fraction of unburned IMR 4895 powder ranges from ~0.34 to ~0.47 [1].",
+    "token_f1": 0.47058823529411764,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "ntrs:20180007479",
+        "i": 9,
+        "title": "Preliminary Assessment of the Use of Heavy Gases in Two-Stage Light Gas Guns"
+      },
+      {
+        "key": "ntrs:20180007081",
+        "i": 4,
+        "title": "Preliminary Assessment of the Use of Heavy Gases in Two-Stage Light Gas Guns"
+      },
+      {
+        "key": "ntrs:19990007798",
+        "i": 48,
+        "title": "CFD Modelling of Bore Erosion in Two-Stage Light Gas Guns"
+      },
+      {
+        "key": "ntrs:20205008987",
+        "i": 163,
+        "title": "LGGUN User's Manual"
+      },
+      {
+        "key": "ntrs:19960008802",
+        "i": 18,
+        "title": "New higher-order Godunov code for modelling performance of two-stage light gas guns"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-052",
+    "question": "What types of analyses are included in the examination of the alteration mineralogy and geochemistry?",
+    "gold": "petrography, scanning electron microscopy, electron microprobe analysis, and x-ray diffraction analysis",
+    "prediction": "XANES spectra, neutron activation analysis, and geochemical studies including U, Th, and Th/U ratios [1,3,4].",
+    "token_f1": 0.16,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "ntrs:19940007543",
+        "i": 492,
+        "title": "Twenty-fourth Lunar and Planetary Science Conference. Part 1: A-F"
+      },
+      {
+        "key": "ntrs:19930000924",
+        "i": 150,
+        "title": "International Conference on Large Meteorite Impacts and Planetary Evolution"
+      },
+      {
+        "key": "ntrs:19940016163",
+        "i": 849,
+        "title": "Twenty-Fourth Lunar and Planetary Science Conference. Part 3: N-Z"
+      },
+      {
+        "key": "ntrs:20010007049",
+        "i": 506,
+        "title": "Catastrophic Events and Mass Extinctions: Impacts and Beyond"
+      },
+      {
+        "key": "ntrs:19950004531",
+        "i": 195,
+        "title": "Workshop on the Analysis of Interplanetary Dust Particles"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-053",
+    "question": "What is the range of pressure in GigaPascals (GPa) where the coexistence of solid and liquid carbon phases occurs during the shock compression of diamond?",
+    "gold": "from 670 to 1060 GPa",
+    "prediction": "Based on the information provided, the coexistence of solid and liquid carbon phases during the shock compression of diamond occurs near 4000 K and < 14 GPa [3].",
+    "token_f1": 0.07142857142857142,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "osti:2575420",
+        "i": 14,
+        "title": "The structure of liquid carbon elucidated by in situ X-ray diffraction"
+      },
+      {
+        "key": "osti:3014607",
+        "i": 44,
+        "title": "Calculating shock Hugoniot and isentropes using multiphase equation of state tables and application to shock and release of diamond ablators in inertial confinement fusion implosions"
+      },
+      {
+        "key": "ntrs:19930020175",
+        "i": 17,
+        "title": "Hypervelocity impact survivability experiments for carbonaceous impactors"
+      },
+      {
+        "key": "dtic:ADA272957",
+        "i": 1001,
+        "title": "Hypervelocity Impact: Proceedings of the 1992 Symposium Held in Austin, Texas on 17-19 November 1992"
+      },
+      {
+        "key": "osti:3365111",
+        "i": 31,
+        "title": "Equation of state of boron carbide B<sub>4</sub>\u2062C"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-054",
+    "question": "What was the total area covered by the individual capture cells on both the leading and trailing edges of LDEF?",
+    "gold": "237 cells each 80.8 cm2 in size",
+    "prediction": "The sources do not provide the total area covered by the individual capture cells on both the leading and trailing edges of LDEF.",
+    "token_f1": 0.08,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "ntrs:19950026492",
+        "i": 54,
+        "title": "Analysis of LDEF experiment AO187-2 chemical and isotopic measurements of micrometeoroids by secondary ion mass spectrometry"
+      },
+      {
+        "key": "ntrs:19950017376",
+        "i": 646,
+        "title": "LDEF: 69 Months in Space. Third Post-Retrieval Symposium, part 1"
+      },
+      {
+        "key": "ntrs:19840016564",
+        "i": 5,
+        "title": "Long Duration Exposure Facility (LDEF). Mission 1 Experiments"
+      },
+      {
+        "key": "ntrs:19930020186",
+        "i": 15,
+        "title": "LDEF data: Comparisons with existing models"
+      },
+      {
+        "key": "ntrs:19910015658",
+        "i": 14,
+        "title": "First LDEF Post-Retrieval Symposium abstracts"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-055",
+    "question": "What is the maximum velocity that can be achieved with very light projectiles and by driving the gun hard?",
+    "gold": "up to 11 km/sec",
+    "prediction": "The maximum velocity that can be achieved with very light projectiles and by driving the gun hard is approximately 12,000 ft/s (about 3,657 m/s) [1].",
+    "token_f1": 0.0,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "dtic:ADA186489",
+        "i": 9,
+        "title": "United States Air Force Research Initiation Program. 1984 Research Reports. Volume 1."
+      },
+      {
+        "key": "dtic:AD0423798",
+        "i": 22,
+        "title": "PROCEEDINGS OF THE SIXTH SYMPOSIUM ON HYPERVELOCITY IMPACT, 30 APRIL-2 May 1963, CLEVELAND, OHIO, VOLUME 1"
+      },
+      {
+        "key": "dtic:AD0783315",
+        "i": 70,
+        "title": "Response of Materials to Impulsive Loading"
+      },
+      {
+        "key": "ntrs:19930013798",
+        "i": 6,
+        "title": "Concept definition study for an extremely large aerophysics range facility"
+      },
+      {
+        "key": "ntrs:20010066711",
+        "i": 11,
+        "title": "A New Technique for Achieving Impact Velocities Greater Than 10 km/sec"
+      }
+    ],
+    "hit_at_k": 0.0
+  },
+  {
+    "qid": "synth-056",
+    "question": "What method was used to detect the motion of the rear surface of a wedge impacted by a projectile?",
+    "gold": "resistance wires strung parallel to and offset from the wedge rear surface",
+    "prediction": "The method used to detect the motion of the rear surface of a wedge impacted by a projectile was by using resistance wires strung parallel to and offset from the wedge rear surface. As the rear surface shorts the wire, the changing resistance of the system provides a means of recording the position history of the contact point between the wedge free surface and the wire.",
+    "token_f1": 0.3548387096774193,
+    "substring_hit": 1.0,
+    "retrieved": [
+      {
+        "key": "dtic:ADA031643",
+        "i": 260,
+        "title": "Kinetics of Shock-Induced Phase Transitions."
+      },
+      {
+        "key": "dtic:AD0669440",
+        "i": 108,
+        "title": "SPALL FRACTURE AND DYNAMIC RESPONSE OF MATERIALS"
+      },
+      {
+        "key": "dtic:AD0730750",
+        "i": 36,
+        "title": "Measurements of Dynamic Properties of Materials. Volume 2. Experimental Methods and Techniques"
+      },
+      {
+        "key": "dtic:AD0718461",
+        "i": 124,
+        "title": "Hypervelocity Impact -- Material Strength Effects on Crater Formation and Shock Propagation in Three Aluminum Alloys"
+      },
+      {
+        "key": "dtic:AD0757633",
+        "i": 16,
+        "title": "High Pressure Shock Wave Behavior of Greatly Distended Copper"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-057",
+    "question": "At what velocity range does the foam sandwich panel outperform the Whipple and stuffed Whipple shields?",
+    "gold": "low velocities (<5 km/s)",
+    "prediction": "At low velocities (<5 km/s), the foam sandwich panel outperforms the Whipple and stuffed Whipple shields [1].",
+    "token_f1": 0.4444444444444445,
+    "substring_hit": 1.0,
+    "retrieved": [
+      {
+        "key": "ntrs:20100005243",
+        "i": 17,
+        "title": "Hypervelocity Impact Performance of Open Cell Foam Core Sandwich Panel Structures"
+      },
+      {
+        "key": "ntrs:20100017497",
+        "i": 11,
+        "title": "Honeycomb vs. Foam: Evaluating a Potential Upgrade to ISS Module Shielding for Micrometeoroids and Orbital Debris"
+      },
+      {
+        "key": "ntrs:20090016347",
+        "i": 3,
+        "title": "Honeycomb vs. Foam: Evaluating Potential Upgrades to ISS Module Shielding"
+      },
+      {
+        "key": "dtic:ADA272957",
+        "i": 305,
+        "title": "Hypervelocity Impact: Proceedings of the 1992 Symposium Held in Austin, Texas on 17-19 November 1992"
+      },
+      {
+        "key": "ntrs:20080009574",
+        "i": 16,
+        "title": "Hypervelocity Impact Evaluation of Metal Foam Core Sandwich Structures"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-058",
+    "question": "What are the two total standoff distances tested for the stuffed Whipple shield in millimeters?",
+    "gold": "28.6 mm and 85.8 mm",
+    "prediction": "The standoff distances tested for the stuffed Whipple shield are 0.32 cm (3.2 mm) and 4.0 inches (approximately 101.6 mm) [1, 3].",
+    "token_f1": 0.2608695652173913,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "ntrs:20030068423",
+        "i": 67,
+        "title": "Meteoroid/Debris Shielding"
+      },
+      {
+        "key": "dtic:ADA429821",
+        "i": 227,
+        "title": "Hypervelocity Impact Analysis of International Space Station Whipple and Enhanced Stuffed Whipple Shields"
+      },
+      {
+        "key": "ntrs:19920010826",
+        "i": 0,
+        "title": "Whipple shield sizing equations"
+      },
+      {
+        "key": "ntrs:19970016213",
+        "i": 16,
+        "title": "Enhanced Whipple Shield"
+      },
+      {
+        "key": "ntrs:20250001790",
+        "i": 11,
+        "title": "Evaluating Basalt Fabric in Stuffed Whipple and Multishock Shields Through Comparative Hypervelocity Tests"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-059",
+    "question": "What is the primary advantage of destructive capture using metallic collectors in the COMRADE experiment?",
+    "gold": "it allows us to gain information on the smallest size fraction and to detect the presence of light elements such as C.",
+    "prediction": "The primary advantage of destructive capture using metallic collectors in the COMRADE experiment is that it allows for the capture of minimally degraded particles, providing complete in situ information concerning mass, velocity, and trajectory of encountered particles [1].",
+    "token_f1": 0.18518518518518517,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "ntrs:19950004531",
+        "i": 26,
+        "title": "Workshop on the Analysis of Interplanetary Dust Particles"
+      },
+      {
+        "key": "ntrs:20080026198",
+        "i": 9,
+        "title": "Focused Ion Beam Recovery of Hypervelocity Impact Residue in Experimental Craters on Metallic Foils"
+      },
+      {
+        "key": "ntrs:19950017376",
+        "i": 532,
+        "title": "LDEF: 69 Months in Space. Third Post-Retrieval Symposium, part 1"
+      },
+      {
+        "key": "ntrs:19950017415",
+        "i": 13,
+        "title": "Micro-abrasion package capture cell experiment on the trailing edge of LDEF: Impactor chemistry and whipple bumper shield efficiencies"
+      },
+      {
+        "key": "ntrs:19950026492",
+        "i": 53,
+        "title": "Analysis of LDEF experiment AO187-2 chemical and isotopic measurements of micrometeoroids by secondary ion mass spectrometry"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-060",
+    "question": "What material was used to coat the LiF window in the Teflon layer for reflectivity in the double shock experiments?",
+    "gold": "Aluminum",
+    "prediction": "Aluminum (Al) was used to coat the LiF window for reflectivity in the double shock experiments [3].",
+    "token_f1": 0.13333333333333333,
+    "substring_hit": 1.0,
+    "retrieved": [
+      {
+        "key": "ntrs:19950007233",
+        "i": 7,
+        "title": "Cratering and penetration experiments in teflon targets at velocities from 1 to 7 km/s"
+      },
+      {
+        "key": "osti:3003011",
+        "i": 9,
+        "title": "The role of sample\u2013window coupling in shock temperature experiments"
+      },
+      {
+        "key": "osti:3019809",
+        "i": 5,
+        "title": "Ultrafast x-ray diffraction of high-pressure phases in dynamically compressed TiO<sub>2</sub>"
+      },
+      {
+        "key": "ntrs:19950017376",
+        "i": 660,
+        "title": "LDEF: 69 Months in Space. Third Post-Retrieval Symposium, part 1"
+      },
+      {
+        "key": "osti:3375388",
+        "i": 2,
+        "title": "Efficacy of Gadolinium Gallium Garnet (GGG) as a High Impedance Optical Window for Shock Wave Experiments"
+      }
+    ],
+    "hit_at_k": 0.0
+  },
+  {
+    "qid": "synth-061",
+    "question": "What was the assumed cause of the flash in early studies of ballistic impact flash?",
+    "gold": "electrically charged particles emitted from the site of impact",
+    "prediction": "In early studies, the flash was assumed to be the result of electrically charged particles emitted from the site of impact [2].",
+    "token_f1": 0.6153846153846153,
+    "substring_hit": 1.0,
+    "retrieved": [
+      {
+        "key": "dtic:ADA523343",
+        "i": 3,
+        "title": "Characterization of Ballistic Impact Flash: An Initial Investigation and Methods Development"
+      },
+      {
+        "key": "dtic:AD0672973",
+        "i": 4,
+        "title": "BALLISTIC IMPACT FLASH"
+      },
+      {
+        "key": "dtic:ADA019321",
+        "i": 14,
+        "title": "Ballistic Impact Flash Resulting from Complete Projectile Penetration of Titanium Targets"
+      },
+      {
+        "key": "dtic:ADA540980",
+        "i": 62,
+        "title": "Empirical Characterization of Ballistic Impact Flash"
+      },
+      {
+        "key": "dtic:ADA004320",
+        "i": 1,
+        "title": "Measurement of Ballistic Impact Flash"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-062",
+    "question": "In the context of hypervelocity impact, what does the term 'particle velocity' refer to?",
+    "gold": "Particle velocity is defined as the velocity of each material element.",
+    "prediction": "Particle velocity refers to the speed at which hypervelocity particles are accelerated during impact experiments [2][3].",
+    "token_f1": 0.16666666666666666,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "dtic:ADA272957",
+        "i": 9,
+        "title": "Hypervelocity Impact: Proceedings of the 1992 Symposium Held in Austin, Texas on 17-19 November 1992"
+      },
+      {
+        "key": "ntrs:19650015410",
+        "i": 117,
+        "title": "A bibliography concerning aspects of the meteoroid hazard"
+      },
+      {
+        "key": "ntrs:19930020176",
+        "i": 17,
+        "title": "Hypervelocity impact facility for simulating materials exposure to impact by space debris"
+      },
+      {
+        "key": "ntrs:19950007233",
+        "i": 51,
+        "title": "Cratering and penetration experiments in teflon targets at velocities from 1 to 7 km/s"
+      },
+      {
+        "key": "ntrs:19960023311",
+        "i": 16,
+        "title": "Structural Damage Prediction and Analysis for Hypervelocity Impact: Consulting"
+      }
+    ],
+    "hit_at_k": 0.0
+  },
+  {
+    "qid": "synth-063",
+    "question": "What model is used to predict Hugoniot states of an initially porous solid?",
+    "gold": "Plate-Gap Model",
+    "prediction": "A porous Hugoniot model following the thermal offset approach [3].",
+    "token_f1": 0.22222222222222224,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "ntrs:19690000894",
+        "i": 24,
+        "title": "Theoretical prediction of crater size for hypervelocity impact by reduced-density particles, 18 May 1966 - 17 August 1967"
+      },
+      {
+        "key": "ntrs:19650012024",
+        "i": 58,
+        "title": "Nonsimilar solutions for impact-generated shock propagation in solids final report"
+      },
+      {
+        "key": "osti:3019809",
+        "i": 34,
+        "title": "Ultrafast x-ray diffraction of high-pressure phases in dynamically compressed TiO<sub>2</sub>"
+      },
+      {
+        "key": "ntrs:19700026189",
+        "i": 126,
+        "title": "Meteoroid Physics Research at MSFC Reviews, Mar. 1968 - Mar. 1970"
+      },
+      {
+        "key": "dtic:AD0757633",
+        "i": 8,
+        "title": "High Pressure Shock Wave Behavior of Greatly Distended Copper"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-064",
+    "question": "What is the nominal pressure of the nitrogen 'driver gas' in the driver tubes?",
+    "gold": "1600 psi",
+    "prediction": "The sources do not specify the nominal pressure of the nitrogen 'driver gas' in the driver tubes.",
+    "token_f1": 0.0,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "dtic:ADA275054",
+        "i": 14,
+        "title": "Transient Internal Probe"
+      },
+      {
+        "key": "ntrs:19680006308",
+        "i": 47,
+        "title": "Explosive hypervelocity launchers"
+      },
+      {
+        "key": "ntrs:19930013798",
+        "i": 35,
+        "title": "Concept definition study for an extremely large aerophysics range facility"
+      },
+      {
+        "key": "dtic:AD0284282",
+        "i": 35,
+        "title": "PROCEEDINGS OF THE FIFTH SYMPOSIUM ON HYPERVELOCITY IMPACT, DENVER, OCTOBER 30, 31, NOVEMBER 1, 1961, VOLUME I - PART I"
+      },
+      {
+        "key": "dtic:AD0465893",
+        "i": 8,
+        "title": "INITIAL OPERATION OF THE PILOT COUNTERFLOW TEST UNIT (I)"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-066",
+    "question": "What type of gun is currently under initial operational testing at the Impact Testing Facility?",
+    "gold": "an exploding wire gun",
+    "prediction": "The Marshall Micrometeorite Gun (MMG) is currently under initial operational testing at the Impact Testing Facility [3].",
+    "token_f1": 0.11764705882352941,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "dtic:ADA019321",
+        "i": 47,
+        "title": "Ballistic Impact Flash Resulting from Complete Projectile Penetration of Titanium Targets"
+      },
+      {
+        "key": "ntrs:20110010224",
+        "i": 0,
+        "title": "Impact Testing for Materials Science at NASA - MSFC"
+      },
+      {
+        "key": "ntrs:20120001533",
+        "i": 4,
+        "title": "Capabilities of the Impact Testing Facility at Marshall Space Flight Center"
+      },
+      {
+        "key": "ntrs:20160005691",
+        "i": 3,
+        "title": "Micrometeorite Impact Test of Flex Solar Array Coupon"
+      },
+      {
+        "key": "ntrs:20090028730",
+        "i": 1,
+        "title": "Southern Impact Testing Alliance (SITA)"
+      }
+    ],
+    "hit_at_k": 0.0
+  },
+  {
+    "qid": "synth-067",
+    "question": "What range of plate thicknesses exhibited ripples without correlating to ripple structure?",
+    "gold": "from 0.025 to 0.625 cm",
+    "prediction": "Plate thicknesses involved in ripple formation varied from 0.025 to 0.625 cm without correlation to ripple structure [1].",
+    "token_f1": 0.45454545454545453,
+    "substring_hit": 1.0,
+    "retrieved": [
+      {
+        "key": "dtic:AD0488153",
+        "i": 32,
+        "title": "HYPERVELOCITY IMPACT STUDIES"
+      },
+      {
+        "key": "osti:3363520",
+        "i": 41,
+        "title": "Dynamic strength of iron under pressure-temperature conditions of Earth\u2019s inner core"
+      },
+      {
+        "key": "dtic:ADA272957",
+        "i": 797,
+        "title": "Hypervelocity Impact: Proceedings of the 1992 Symposium Held in Austin, Texas on 17-19 November 1992"
+      },
+      {
+        "key": "dtic:AD0728846",
+        "i": 44,
+        "title": "Measurements of Dynamic Properties of Materials. Volume 5. OFHC Copper"
+      },
+      {
+        "key": "ntrs:19940016163",
+        "i": 600,
+        "title": "Twenty-Fourth Lunar and Planetary Science Conference. Part 3: N-Z"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-068",
+    "question": "What happens to the maximum ignition parameter values when the coefficient of friction is decreased from 0.4 to 0.3?",
+    "gold": "The maxima are reduced by about half.",
+    "prediction": "When the coefficient of friction is decreased from 0.4 to 0.3, the maximum ignition parameter values are reduced by about half [1].",
+    "token_f1": 0.39999999999999997,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "osti:2341956",
+        "i": 8,
+        "title": "Modeling of the Dihedral Shear Compression Test for For Studying Non-Shock Ignition in High Explosives"
+      },
+      {
+        "key": "ntrs:20205008987",
+        "i": 144,
+        "title": "LGGUN User's Manual"
+      },
+      {
+        "key": "dtic:AD0423798",
+        "i": 136,
+        "title": "PROCEEDINGS OF THE SIXTH SYMPOSIUM ON HYPERVELOCITY IMPACT, 30 APRIL-2 May 1963, CLEVELAND, OHIO, VOLUME 1"
+      },
+      {
+        "key": "osti:3367676",
+        "i": 18,
+        "title": "A model for oblique impacts on material surfaces"
+      },
+      {
+        "key": "ntrs:19960008802",
+        "i": 53,
+        "title": "New higher-order Godunov code for modelling performance of two-stage light gas guns"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-069",
+    "question": "What is the relationship between pressure and radial distance according to Rinehart's findings for an elastic wave of constant length, velocity, and shape?",
+    "gold": "the pressure decays inversely with the first power of the radial distance.",
+    "prediction": "According to Rinehart's findings [3], for an elastic wave of constant length, velocity, and shape, the pressure \\( P \\) varies inversely with the radial distance \\( R \\) raised to the power of 1.6 for pressures below 0.3 megabar, and to the power of 1.8 for pressures between 0.3 and 1.0 megabar.",
+    "token_f1": 0.2692307692307693,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "dtic:AD0423063",
+        "i": 197,
+        "title": "PROCEEDINGS OF THE SIXTH SYMPOSIUM ON HYPERVELOCITY IMPACT, CLEVELAND, OHIO, APRIL 30-May 2, 1963. Volume 2, Part 1"
+      },
+      {
+        "key": "dtic:AD0669440",
+        "i": 53,
+        "title": "SPALL FRACTURE AND DYNAMIC RESPONSE OF MATERIALS"
+      },
+      {
+        "key": "dtic:AD0718461",
+        "i": 155,
+        "title": "Hypervelocity Impact -- Material Strength Effects on Crater Formation and Shock Propagation in Three Aluminum Alloys"
+      },
+      {
+        "key": "ntrs:19660028233",
+        "i": 14,
+        "title": "Measurements of shock wave pressures generated by hypervelocity impacts in aluminum"
+      },
+      {
+        "key": "dtic:AD0465129",
+        "i": 6,
+        "title": "STRESS WAVES IN COMPOSITE LAMINATES"
+      }
+    ],
+    "hit_at_k": 0.0
+  },
+  {
+    "qid": "synth-070",
+    "question": "What is the separation distance between the cover-plate surrogate panel and the aft, ballistic-enhanced MLI in the configuration described?",
+    "gold": "15 cm",
+    "prediction": "The separation distance between the cover-plate surrogate panel and the aft, ballistic-enhanced MLI is 35 cm [1].",
+    "token_f1": 0.13333333333333336,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "ntrs:20210020874",
+        "i": 17,
+        "title": "Orion Meteoroid and Debris Analysis with a Single Kevlar\u00ae Layer Enhancement to the Propulsion Tank Multi-Layer Insulation: Comparison of the Observed Data and the Adjusted Ballistic Models"
+      },
+      {
+        "key": "dtic:ADA272957",
+        "i": 745,
+        "title": "Hypervelocity Impact: Proceedings of the 1992 Symposium Held in Austin, Texas on 17-19 November 1992"
+      },
+      {
+        "key": "ntrs:20170009405",
+        "i": 1,
+        "title": "IADC Vulnerability Report, IT32-21"
+      },
+      {
+        "key": "ntrs:20030068423",
+        "i": 80,
+        "title": "Meteoroid/Debris Shielding"
+      },
+      {
+        "key": "ntrs:19910009851",
+        "i": 54,
+        "title": "Hypervelocity Impact Physics"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-071",
+    "question": "What material was used to place behind the shear disk to prevent fragmentation?",
+    "gold": "steel ring",
+    "prediction": "Grids and diaphragm [1].",
+    "token_f1": 0.0,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "ntrs:19930093745",
+        "i": 65,
+        "title": "Development of a high-velocity free-flight launcher : the Ames light-gas gun"
+      },
+      {
+        "key": "ntrs:19930085001",
+        "i": 66,
+        "title": "Development of a Piston-compressor Type Light-gas Gun for the Launching of Free-flight Models at High Velocity"
+      },
+      {
+        "key": "ntrs:19920005896",
+        "i": 8,
+        "title": "Hypervelocity impact shield"
+      },
+      {
+        "key": "dtic:ADA272957",
+        "i": 630,
+        "title": "Hypervelocity Impact: Proceedings of the 1992 Symposium Held in Austin, Texas on 17-19 November 1992"
+      },
+      {
+        "key": "dtic:ADA029425",
+        "i": 7,
+        "title": "Hypervelocity-Impact Shock-Induced Damage to Steel Armor"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-073",
+    "question": "What could be a consequence of a complete failure of the sabot during the launch process?",
+    "gold": "a complete failure of the sabot (i.e., model fall-through) within the launch tube could result in the model scraping along the gun barrel and ruining it, requiring a time-consuming and expensive barrel replacement.",
+    "prediction": "If the sabot fails completely during the launch process, it could lead to bad sabot separation, which is witnessed post-shot on the sabot catcher plate [4].",
+    "token_f1": 0.16326530612244897,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "dtic:AD0605836",
+        "i": 17,
+        "title": "DEVELOPMENT OF A SABOTING TECHNIQUE FOR LIGHT GAS HYPERVELOCITY PROJECTORS"
+      },
+      {
+        "key": "ntrs:20170001991",
+        "i": 74,
+        "title": "Design Guide for Aerodynamics Testing of Earth and Planetary Entry Vehicles in a Ballistic Range"
+      },
+      {
+        "key": "dtic:AD0423798",
+        "i": 137,
+        "title": "PROCEEDINGS OF THE SIXTH SYMPOSIUM ON HYPERVELOCITY IMPACT, 30 APRIL-2 May 1963, CLEVELAND, OHIO, VOLUME 1"
+      },
+      {
+        "key": "ntrs:20240010753",
+        "i": 6,
+        "title": "Preliminary Experimental Investigation of Multi-Shock Shield Performance Against Meteoritic Other Lithic Projectiles"
+      },
+      {
+        "key": "ntrs:19880000661",
+        "i": 63,
+        "title": "A feasibility study of a hypersonic real-gas facility"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-074",
+    "question": "What condition is imposed on the system during the release process to construct the release isentrope in P-V space?",
+    "gold": "isentropic constraint dS=0",
+    "prediction": "The isentropic constraint \\( dS=0 \\) is imposed on the system during the release process to construct the release isentrope in P-V space [1, 2, 4].",
+    "token_f1": 0.3,
+    "substring_hit": 1.0,
+    "retrieved": [
+      {
+        "key": "ntrs:19970034610",
+        "i": 11,
+        "title": "Analytical Modeling of Pressure Wall Hole Size and Maximum Tip-to-Tip Crack Length for Perforating Normal and Oblique Orbital Debris Impacts"
+      },
+      {
+        "key": "dtic:ADA279812",
+        "i": 18,
+        "title": "Debris Cloud Material Characterization for Hypervelocity Impacts of Single- and Multi-Material Projectiles on Thin Target Plates"
+      },
+      {
+        "key": "dtic:ADA269190",
+        "i": 20,
+        "title": "Toward a Characterization of the Debris Cloud Created in a Hypervelocity Impact on a Thin Plate"
+      },
+      {
+        "key": "ntrs:19970026615",
+        "i": 10,
+        "title": "Vulnerability of Space Station Freedom Modules: A Study of the Effects of Module Perforation on Crew and Equipment: Analytical Modeling of Internal Debris Cloud Effects - Volume 2"
+      },
+      {
+        "key": "osti:3014607",
+        "i": 26,
+        "title": "Calculating shock Hugoniot and isentropes using multiphase equation of state tables and application to shock and release of diamond ablators in inertial confinement fusion implosions"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-075",
+    "question": "What is the maximum speed that projectiles with diameters up to 3.175 mm can reach using the light-gas guns?",
+    "gold": "7 km/s",
+    "prediction": "From the sources provided, the maximum speed that projectiles can reach using the light-gas guns varies depending on the specific setup. However, one source indicates that the gun is capable of firing projectiles at speeds covering roughly 40% of the anticipated, on-orbit impact speeds. Given that the anticipated on-orbit impact speeds can go up to approximately 7.5 km/s [4], we can estimate that the maximum speed for projectiles up to 3.175 mm in diameter would be around 3 km/s to 3.0 km/s (40% of 7.5 km/s).\n\nFor precise values, you might need to refer to specific experimental results or calibration data from the tests conducted, as detailed in the sources [1], [3], and [5",
+    "token_f1": 0.019999999999999997,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "ntrs:19930013798",
+        "i": 6,
+        "title": "Concept definition study for an extremely large aerophysics range facility"
+      },
+      {
+        "key": "ntrs:20220013697",
+        "i": 0,
+        "title": "An Efficient and Effective Light Gas Gun Design for Millimeter-scale Hypervelocity Testing"
+      },
+      {
+        "key": "ntrs:20080026200",
+        "i": 9,
+        "title": "Laboratory Simulation of Impacts upon Aluminum Foils of the Stardust Spacecraft: Calibration of Dust Particle Size from Comet Wild 2"
+      },
+      {
+        "key": "dtic:ADA429821",
+        "i": 62,
+        "title": "Hypervelocity Impact Analysis of International Space Station Whipple and Enhanced Stuffed Whipple Shields"
+      },
+      {
+        "key": "ntrs:20030079974",
+        "i": 6,
+        "title": "Hypervelocity Impact Test Results for a Metallic Thermal Protection System"
+      }
+    ],
+    "hit_at_k": 0.0
+  },
+  {
+    "qid": "synth-076",
+    "question": "What oxide has the highest weight percentage in the Electron Microprobe Analysis of the single-crystal anorthite?",
+    "gold": "Al2O3 35.28",
+    "prediction": "Al2O3 has the highest weight percentage at 35.28 in the Electron Microprobe Analysis of the single-crystal anorthite [1].",
+    "token_f1": 0.25,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "ntrs:19790023946",
+        "i": 34,
+        "title": "Anorthite: Thermal equation of state to high pressures"
+      },
+      {
+        "key": "ntrs:19830027853",
+        "i": 25,
+        "title": "Shock-wave properties and high-pressure equations of state of geophysically important materials"
+      },
+      {
+        "key": "ntrs:19940016163",
+        "i": 716,
+        "title": "Twenty-Fourth Lunar and Planetary Science Conference. Part 3: N-Z"
+      },
+      {
+        "key": "ntrs:19930000924",
+        "i": 168,
+        "title": "International Conference on Large Meteorite Impacts and Planetary Evolution"
+      },
+      {
+        "key": "dtic:ADA627557",
+        "i": 25,
+        "title": "DebriSat Pre Preshot Laboratory Analyses"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-077",
+    "question": "What is the ratio of plate thickness to the minimum wavelength of the wave motion in the plate?",
+    "gold": "about 0.006",
+    "prediction": "If the thickness of a lamination is sufficiently small or if the pulse length is sufficiently large, the train of transmitted waves will merge into a single wave. For this to occur, the pulse length, \\(A\\), must be equal to or greater than twice the material thickness. This implies a ratio of plate thickness to the minimum wavelength of the wave motion in the plate is at most 0.5 [3].",
+    "token_f1": 0.0,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "dtic:AD0870792",
+        "i": 29,
+        "title": "Investigation of Dynamic Mechanical Stress with Photoelastic Techniques"
+      },
+      {
+        "key": "ntrs:20070031921",
+        "i": 8,
+        "title": "Hypervelocity Impact (HVI): WLE Small-Scale Fiberglass Panel Flat Multi-Layer Targets A-1, A-2, and B-1 - Volume 2"
+      },
+      {
+        "key": "dtic:AD0465129",
+        "i": 15,
+        "title": "STRESS WAVES IN COMPOSITE LAMINATES"
+      },
+      {
+        "key": "dtic:ADA272957",
+        "i": 776,
+        "title": "Hypervelocity Impact: Proceedings of the 1992 Symposium Held in Austin, Texas on 17-19 November 1992"
+      },
+      {
+        "key": "ntrs:19670012739",
+        "i": 26,
+        "title": "Analytical study of the fracture of liquid- filled tanks impacted by hypervelocity particles"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-078",
+    "question": "What condition is necessary for two impact conditions to be considered equivalent in terms of their effect on the final crater shape?",
+    "gold": "At corresponding times, the total forward axial momentum, the total outward radial momentum, and the amplitude of the pressure pulse must become equal prior to the onset of strength and strain-rate effects.",
+    "prediction": "At these corresponding times the total forward axial momentum \\( Z' \\) the total outward radial momentum, \\( R' \\), and the amplitude of the pressure pulse become equal prior to the onset of strength and strain-rate effects [1].",
+    "token_f1": 0.9285714285714286,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "ntrs:19690000894",
+        "i": 34,
+        "title": "Theoretical prediction of crater size for hypervelocity impact by reduced-density particles, 18 May 1966 - 17 August 1967"
+      },
+      {
+        "key": "dtic:AD0423064",
+        "i": 230,
+        "title": "PROCEEDINGS OF THE SIXTH SYMPOSIUM ON HYPERVELOCITY IMPACT, CLEVELAND, OHIO, APRIL 30, MAY 1, 2, 1963, SPONSORED BY: U.S. ARMY, U.S. AIR FORCE, U.S. NAVY. VOLUME 2, PART 2"
+      },
+      {
+        "key": "dtic:AD0284282",
+        "i": 296,
+        "title": "PROCEEDINGS OF THE FIFTH SYMPOSIUM ON HYPERVELOCITY IMPACT, DENVER, OCTOBER 30, 31, NOVEMBER 1, 1961, VOLUME I - PART I"
+      },
+      {
+        "key": "ntrs:20030079993",
+        "i": 67,
+        "title": "Results of the Workshop on Impact Cratering: Bridging the Gap Between Modeling and Observations"
+      },
+      {
+        "key": "ntrs:19940016163",
+        "i": 549,
+        "title": "Twenty-Fourth Lunar and Planetary Science Conference. Part 3: N-Z"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-079",
+    "question": "What is the estimated depth of the melt zone for a homogeneous rock target after an impact?",
+    "gold": "about 3 km",
+    "prediction": "For a homogeneous rock target, the estimated depth of the melt zone after an impact is about 3 km [1].",
+    "token_f1": 0.33333333333333337,
+    "substring_hit": 1.0,
+    "retrieved": [
+      {
+        "key": "ntrs:19930000924",
+        "i": 134,
+        "title": "International Conference on Large Meteorite Impacts and Planetary Evolution"
+      },
+      {
+        "key": "ntrs:20030079993",
+        "i": 35,
+        "title": "Results of the Workshop on Impact Cratering: Bridging the Gap Between Modeling and Observations"
+      },
+      {
+        "key": "ntrs:20030014839",
+        "i": 166,
+        "title": "Impact Cratering: Bridging the Gap Between Modeling and Observations"
+      },
+      {
+        "key": "ntrs:19980008049",
+        "i": 20,
+        "title": "Scaling Impact-Melt and Crater Dimensions: Implications for the Lunar Cratering Record"
+      },
+      {
+        "key": "dtic:AD0413070",
+        "i": 21,
+        "title": "REVIEW OF PHYSICAL PROCESSES IN HYPERVELOCITY IMPACT AND PENETRATION"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-080",
+    "question": "What method did Gehring et al. use to measure the maximum shock pressure?",
+    "gold": "throw-off pellet method",
+    "prediction": "Gehring et al. used the \"Throw-off Pellet Technique\" to measure the maximum shock pressure [1].",
+    "token_f1": 0.26666666666666666,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "ntrs:19660028233",
+        "i": 9,
+        "title": "Measurements of shock wave pressures generated by hypervelocity impacts in aluminum"
+      },
+      {
+        "key": "osti:3007987",
+        "i": 8,
+        "title": "Radiation drive designed to extend the pressure ranges measured in Gbar equation of state experiments at the National Ignition Facility"
+      },
+      {
+        "key": "osti:3029211",
+        "i": 3,
+        "title": "Uncertainty in Dynamic Compression of Materials: The Shock Hugoniot"
+      },
+      {
+        "key": "dtic:AD0850941",
+        "i": 4,
+        "title": "High Pressure Hugoniot Data Obtained with a Manganin Piezoresistive Pressure Transducer"
+      },
+      {
+        "key": "ntrs:19660012978",
+        "i": 39,
+        "title": "Hypervelocity impact effects on liquid hydrogen tanks Final report, 1 Jul. 1964 - 30 Nov. 1965"
+      }
+    ],
+    "hit_at_k": 0.0
+  },
+  {
+    "qid": "synth-081",
+    "question": "What material was used to replace the gun steel in the gun tubes to achieve higher muzzle velocities?",
+    "gold": "rhenium",
+    "prediction": "Rhenium was chosen as the refractory metal gun tube material to achieve higher muzzle velocities [1, 2].",
+    "token_f1": 0.13333333333333333,
+    "substring_hit": 1.0,
+    "retrieved": [
+      {
+        "key": "ntrs:20190000250",
+        "i": 36,
+        "title": "Design of a Two-Stage Light Gas Gun for Muzzle Velocities of 10 - 11 km/s"
+      },
+      {
+        "key": "ntrs:20160005034",
+        "i": 30,
+        "title": "Use of a Tantalum Liner to Reduce Bore Erosion and Increase Muzzle Velocity in Two-Stage Light Gas Guns"
+      },
+      {
+        "key": "ntrs:20205008987",
+        "i": 167,
+        "title": "LGGUN User's Manual"
+      },
+      {
+        "key": "dtic:AD0263890",
+        "i": 2,
+        "title": "LIGHT-GAS GUN FOR PRODUCTION OF SHOCK PRESSURE IN SOLIDS"
+      },
+      {
+        "key": "dtic:AD0284282",
+        "i": 70,
+        "title": "PROCEEDINGS OF THE FIFTH SYMPOSIUM ON HYPERVELOCITY IMPACT, DENVER, OCTOBER 30, 31, NOVEMBER 1, 1961, VOLUME I - PART I"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-083",
+    "question": "What factor primarily causes the helium pressure at the projectile's base to decrease during the launching run?",
+    "gold": "a pressure drop is required to accelerate the helium from very low velocity in the pump tube to the velocity of the projectile at its base in the launch tube.",
+    "prediction": "A pressure drop is required to accelerate the helium from very low velocity in the pump tube to the velocity of the projectile at its base in the launch tube. This pressure drop is proportional to the kinetic energy which must be imparted to the helium as it accelerates [1, 3].",
+    "token_f1": 0.7384615384615384,
+    "substring_hit": 1.0,
+    "retrieved": [
+      {
+        "key": "ntrs:19930085001",
+        "i": 28,
+        "title": "Development of a Piston-compressor Type Light-gas Gun for the Launching of Free-flight Models at High Velocity"
+      },
+      {
+        "key": "dtic:ADA186489",
+        "i": 43,
+        "title": "United States Air Force Research Initiation Program. 1984 Research Reports. Volume 1."
+      },
+      {
+        "key": "ntrs:19930093745",
+        "i": 26,
+        "title": "Development of a high-velocity free-flight launcher : the Ames light-gas gun"
+      },
+      {
+        "key": "dtic:AD0357373",
+        "i": 23,
+        "title": "AUTOMATIC LIGHT GAS GUN DEVELOPMENT"
+      },
+      {
+        "key": "dtic:AD0350318",
+        "i": 41,
+        "title": "AUTOMATIC LIGHT GAS GUN DEVELOPMENT"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-084",
+    "question": "What was the mass of the target used in the DebriSat test?",
+    "gold": "50 kg",
+    "prediction": "The mass of the target used in the DebriSat test was 56.0 kg [4].",
+    "token_f1": 0.16666666666666669,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "dtic:ADA625039",
+        "i": 1,
+        "title": "DebriSat Laboratory Analyses"
+      },
+      {
+        "key": "dtic:ADA627320",
+        "i": 1,
+        "title": "FTIR Analyses of Hypervelocity Impact Deposits: DebriSat Tests"
+      },
+      {
+        "key": "ntrs:20130011792",
+        "i": 6,
+        "title": "DebriSat - A Planned Laboratory-Based Satellite Impact Experiment for Breakup Fragment Characterizations"
+      },
+      {
+        "key": "ntrs:20220009373",
+        "i": 4,
+        "title": "Updates on the DebriSat Hypervelocity Experiment and Characterization of Fragments in Support of Environmental Models"
+      },
+      {
+        "key": "ntrs:20210011329",
+        "i": 5,
+        "title": "Spectral Characterization of Spacecraft Materials used in Hypervelocity Impact Testing"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-085",
+    "question": "What type of accelerator was used for cosmic dust simulation according to Green, Clarke, and Stevenson in 1988?",
+    "gold": "A 2MV Van de Graaff Accelerator",
+    "prediction": "According to the sources provided, a two-stage light-gas gun was used for cosmic dust simulation [5].",
+    "token_f1": 0.0,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "ntrs:19680019455",
+        "i": 0,
+        "title": "Development of a micrometeoroid simulation device, constant area accelerator, volume 2"
+      },
+      {
+        "key": "dtic:ADA272957",
+        "i": 1263,
+        "title": "Hypervelocity Impact: Proceedings of the 1992 Symposium Held in Austin, Texas on 17-19 November 1992"
+      },
+      {
+        "key": "ntrs:20050169522",
+        "i": 0,
+        "title": "Electron Beam Analysis of Micrometeoroids Captured in Aerogel as Stardust Analogues"
+      },
+      {
+        "key": "ntrs:19930016943",
+        "i": 0,
+        "title": "Oblique MHD cosmic-ray modified shocks: Two-fluid numerical simulations"
+      },
+      {
+        "key": "ntrs:19940016163",
+        "i": 978,
+        "title": "Twenty-Fourth Lunar and Planetary Science Conference. Part 3: N-Z"
+      }
+    ],
+    "hit_at_k": 0.0
+  },
+  {
+    "qid": "synth-086",
+    "question": "What is the maximum framing rate at which the sequential laser photography system can operate?",
+    "gold": "up to 10^7 per second",
+    "prediction": "The maximum framing rate at which the sequential laser photography system can operate is 107 sec -1 [1].",
+    "token_f1": 0.1,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "dtic:ADA107852",
+        "i": 6,
+        "title": "Hypervelocity Impact Instrumentation Development"
+      },
+      {
+        "key": "dtic:ADA118436",
+        "i": 20,
+        "title": "Range Instrumentation Development"
+      },
+      {
+        "key": "ntrs:19660004002",
+        "i": 14,
+        "title": "Investigation of characteristics of pressure waves generated in water filled tanks impacted by high-velocity projectiles"
+      },
+      {
+        "key": "ntrs:19930006399",
+        "i": 37,
+        "title": "Investigation of the aerothermodynamics of hypervelocity reacting flows in the ram accelerator"
+      },
+      {
+        "key": "ntrs:19710005933",
+        "i": 0,
+        "title": "An ultra-high-speed photographic system for investigating hypervelocity impact phenomena"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-087",
+    "question": "What elements showed substantial enhancements in more than half of the preliminary SIMS measurements made on the impacts?",
+    "gold": "Mg, Al, Si, Ca and Fe",
+    "prediction": "Mg, AI, Si, Ca and Fe [4].",
+    "token_f1": 0.8333333333333334,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "ntrs:19950026492",
+        "i": 83,
+        "title": "Analysis of LDEF experiment AO187-2 chemical and isotopic measurements of micrometeoroids by secondary ion mass spectrometry"
+      },
+      {
+        "key": "ntrs:19950017376",
+        "i": 599,
+        "title": "LDEF: 69 Months in Space. Third Post-Retrieval Symposium, part 1"
+      },
+      {
+        "key": "ntrs:19930020189",
+        "i": 3,
+        "title": "Elemental analyses of hypervelocity microparticle impact sites on Interplanetary Dust Experiment sensor surfaces"
+      },
+      {
+        "key": "ntrs:19910015658",
+        "i": 52,
+        "title": "First LDEF Post-Retrieval Symposium abstracts"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-088",
+    "question": "What is the full width at half maximum (FWHM) of the spot size generated by the NIKE laser facility?",
+    "gold": "approximately 1750 \u00b5m",
+    "prediction": "The full width at half maximum (FWHM) of the spot size generated by the NIKE laser facility is approximately 1750 lm [1].",
+    "token_f1": 0.1904761904761905,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "osti:3001296",
+        "i": 13,
+        "title": "Absolute Hugoniot measurements in low-density plastic foams on the NIKE shock compression platform"
+      },
+      {
+        "key": "osti:2352538",
+        "i": 1,
+        "title": "High-Energy Laser Direct Strike Assessment for NIF CryoXNBS Snout and Naiad SNM Container"
+      },
+      {
+        "key": "osti:2587708",
+        "i": 5,
+        "title": "Measuring ejecta particle size distributions using dark field imaging versus light field imaging"
+      },
+      {
+        "key": "osti:3003996",
+        "i": 50,
+        "title": "The National Diagnostic Plan (NDP) for HED Science September 2025"
+      },
+      {
+        "key": "osti:3011713",
+        "i": 24,
+        "title": "Shock compression of FeOOH and implications for iron-water interactions in super-earth magma oceans"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-089",
+    "question": "What materials were primarily used in the construction of the DebrisLV target?",
+    "gold": "aluminum, stainless steel, copper, and titanium",
+    "prediction": "The DebrisLV target was primarily constructed of aluminum, titanium, copper, and stainless steel [4].",
+    "token_f1": 0.6666666666666666,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "dtic:ADA625195",
+        "i": 10,
+        "title": "DebriSat Hypervelocity Impact Test"
+      },
+      {
+        "key": "dtic:ADA625015",
+        "i": 2,
+        "title": "DebrisLV Hypervelocity Impact Post-Shot Physical Results Summary"
+      },
+      {
+        "key": "ntrs:20240011190",
+        "i": 4,
+        "title": "Analysis of Darkened Fragments Resulting from Laboratory Hypervelocity Experiments"
+      },
+      {
+        "key": "dtic:ADA627320",
+        "i": 10,
+        "title": "FTIR Analyses of Hypervelocity Impact Deposits: DebriSat Tests"
+      },
+      {
+        "key": "dtic:ADA625039",
+        "i": 19,
+        "title": "DebriSat Laboratory Analyses"
+      }
+    ],
+    "hit_at_k": 0.0
+  },
+  {
+    "qid": "synth-090",
+    "question": "What is the range of impact velocities used in the planar impact experiment?",
+    "gold": "0.2 to 0.35 km/s",
+    "prediction": "The range of impact velocities used in the planar impact experiment is from 2 to 5 km/s [2, 16].",
+    "token_f1": 0.2105263157894737,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "ntrs:19950007233",
+        "i": 10,
+        "title": "Cratering and penetration experiments in teflon targets at velocities from 1 to 7 km/s"
+      },
+      {
+        "key": "dtic:AD0783315",
+        "i": 4,
+        "title": "Response of Materials to Impulsive Loading"
+      },
+      {
+        "key": "dtic:AD0356903",
+        "i": 37,
+        "title": "HYPERVELOCITY IMPACT EXPERIMENTS"
+      },
+      {
+        "key": "ntrs:19860017669",
+        "i": 0,
+        "title": "A planetary ultra hypervelocity impact mechanics and shock wave science facility"
+      },
+      {
+        "key": "dtic:ADA272957",
+        "i": 1180,
+        "title": "Hypervelocity Impact: Proceedings of the 1992 Symposium Held in Austin, Texas on 17-19 November 1992"
+      }
+    ],
+    "hit_at_k": 0.0
+  },
+  {
+    "qid": "synth-091",
+    "question": "What is the highest temperature obtained in the simulations during the highest impact velocity experiment?",
+    "gold": "approximately 780 K",
+    "prediction": "The highest velocity impact in the study was 1000 m/s, and the temperature rose significantly. While the exact peak temperature is not specified in the given text, it mentions that temperatures increased between 777 K and 931 K absolute for the selected temperature. Given the context, the highest temperature obtained in the simulations during the highest impact velocity experiment is likely around 931 K absolute [1].",
+    "token_f1": 0.034482758620689655,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "osti:3011925",
+        "i": 6,
+        "title": "Modeling of melting and erosion in high velocity microparticle impacts"
+      },
+      {
+        "key": "dtic:ADA272957",
+        "i": 139,
+        "title": "Hypervelocity Impact: Proceedings of the 1992 Symposium Held in Austin, Texas on 17-19 November 1992"
+      },
+      {
+        "key": "dtic:ADA449838",
+        "i": 24,
+        "title": "Analysis and Simulation of Hypervelocity Gouging Impacts"
+      },
+      {
+        "key": "osti:2308900",
+        "i": 31,
+        "title": "Spatial decay of electromagnetic waves from hypervelocity impact plasmas"
+      },
+      {
+        "key": "ntrs:19660011806",
+        "i": 33,
+        "title": "Experiments on the impact-light-flash at high velocities"
+      }
+    ],
+    "hit_at_k": 0.0
+  },
+  {
+    "qid": "synth-092",
+    "question": "What is the new operating condition for the 0.5-inch two-stage light-gas gun developed by NASA Ames?",
+    "gold": "A usable 8 km/s operating condition now exists for the full spectrum of particle sizes",
+    "prediction": "The new operating condition for the 0.5-inch two-stage light-gas gun developed by NASA Ames is an impact velocity capability to 8 km/s, while maintaining acceptable levels of gun barrel erosion and gun component stresses [3].",
+    "token_f1": 0.2727272727272727,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "ntrs:19980211345",
+        "i": 40,
+        "title": "Optimization Study of the Ames 0.5 Two-Stage Light Gas Gun"
+      },
+      {
+        "key": "ntrs:20180007384",
+        "i": 21,
+        "title": "Recent Upgrades for the NASA Ames Vertical Gun Range"
+      },
+      {
+        "key": "ntrs:19980236871",
+        "i": 30,
+        "title": "Results of Two-Stage Light-Gas Gun Development Efforts and Hypervelocity Impact Tests of Advanced Thermal Protection Materials"
+      },
+      {
+        "key": "ntrs:19730003723",
+        "i": 0,
+        "title": "Optimization of a two stage light gas gun"
+      },
+      {
+        "key": "ntrs:19930093745",
+        "i": 10,
+        "title": "Development of a high-velocity free-flight launcher : the Ames light-gas gun"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-093",
+    "question": "What was the velocity of the projectile as it traveled down the last part of the range?",
+    "gold": "14 km/sec",
+    "prediction": "11.4 km/sec [1].",
+    "token_f1": 0.5,
+    "substring_hit": 1.0,
+    "retrieved": [
+      {
+        "key": "ntrs:19730012525",
+        "i": 25,
+        "title": "Explosively driven hypervelocity launcher: Second-stage augmentation techniques"
+      },
+      {
+        "key": "dtic:ADA123562",
+        "i": 11,
+        "title": "Viscoelastic and Damping Properties of Armor Materials under Hypervelocity Penetration."
+      },
+      {
+        "key": "ntrs:19670012821",
+        "i": 38,
+        "title": "Feasibility study of an explosive gun"
+      },
+      {
+        "key": "ntrs:19690000894",
+        "i": 64,
+        "title": "Theoretical prediction of crater size for hypervelocity impact by reduced-density particles, 18 May 1966 - 17 August 1967"
+      },
+      {
+        "key": "dtic:ADA019321",
+        "i": 34,
+        "title": "Ballistic Impact Flash Resulting from Complete Projectile Penetration of Titanium Targets"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-094",
+    "question": "What type of plasma is used in the electrothermal light gas gun to impart high velocities to projectiles?",
+    "gold": "hot hydrogen plasma",
+    "prediction": "Aluminum foil is used to generate a plasma that accelerates thin plastic plates to velocities above 9 km/sec [3]. However, specific details about the type of plasma used in an electrothermal light gas gun to impart high velocities to projectiles are not provided in the given sources.",
+    "token_f1": 0.04545454545454545,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "dtic:ADA281980",
+        "i": 12,
+        "title": "Thermal Characteristics and Heat Transfer in an Electrothermal Light Gas Gun"
+      },
+      {
+        "key": "dtic:AD0284282",
+        "i": 31,
+        "title": "PROCEEDINGS OF THE FIFTH SYMPOSIUM ON HYPERVELOCITY IMPACT, DENVER, OCTOBER 30, 31, NOVEMBER 1, 1961, VOLUME I - PART I"
+      },
+      {
+        "key": "dtic:AD0423798",
+        "i": 116,
+        "title": "PROCEEDINGS OF THE SIXTH SYMPOSIUM ON HYPERVELOCITY IMPACT, 30 APRIL-2 May 1963, CLEVELAND, OHIO, VOLUME 1"
+      },
+      {
+        "key": "ntrs:19930020176",
+        "i": 4,
+        "title": "Hypervelocity impact facility for simulating materials exposure to impact by space debris"
+      },
+      {
+        "key": "ntrs:19910014898",
+        "i": 30,
+        "title": "Advanced Hypervelocity Aerophysics Facility Workshop"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-095",
+    "question": "Where did the hypervelocity impact testing of the Composite Overwrapped Pressure Vessel (COPV) take place?",
+    "gold": "NASA White Sands test Facility (WSTF) Remote Hypervelocity Test Laboratory",
+    "prediction": "The hypervelocity impact testing of the Composite Overwrapped Pressure Vessel (COPV) was conducted at NASA Johnson Space Center, Houston, TX [1][2].",
+    "token_f1": 0.14285714285714285,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "ntrs:20190033946",
+        "i": 0,
+        "title": "Hypervelocity Impact of Composite Overwrap Pressure Vessels"
+      },
+      {
+        "key": "ntrs:20170003851",
+        "i": 0,
+        "title": "Hypervelocity Impact of Composite Overwrapped Pressure Vessel (COPV) and Comparison to a Numerical Model"
+      },
+      {
+        "key": "ntrs:20230012105",
+        "i": 44,
+        "title": "A Compilation of Composite Overwrapped Pressure Vessel Research (2015\u20132021)"
+      },
+      {
+        "key": "ntrs:20200003162",
+        "i": 119,
+        "title": "NESC Composite Overwrapped Pressure Vessel Hypervelocity Impact Study: Phase A\u2013Acoustic Emission Review"
+      },
+      {
+        "key": "ntrs:20160014020",
+        "i": 0,
+        "title": "Development of a Numerical Model of Hypervelocity Impact into a Pressurized Composite Overwrapped Pressure Vessel"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-096",
+    "question": "What is the typical relationship between the projectile thickness (Lp) and the target thickness (LT) in a flyer-plate experiment?",
+    "gold": "Typically the projectile thickness Lp is smaller than the target thickness LT",
+    "prediction": "The sources do not provide a specific typical relationship between the projectile thickness (Lp) and the target thickness (Lt) in a flyer-plate experiment.",
+    "token_f1": 0.4444444444444445,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "dtic:ADA272957",
+        "i": 837,
+        "title": "Hypervelocity Impact: Proceedings of the 1992 Symposium Held in Austin, Texas on 17-19 November 1992"
+      },
+      {
+        "key": "dtic:ADA250130",
+        "i": 7,
+        "title": "Modelling Short Duration Shock Wave Attenuation in Explosives"
+      },
+      {
+        "key": "dtic:ADA270387",
+        "i": 26,
+        "title": "Simulating Sympathetic Detonation Effects"
+      },
+      {
+        "key": "osti:2539829",
+        "i": 11,
+        "title": "Full-field quantitative visualization of shock-driven pore collapse and failure modes in PMMA"
+      },
+      {
+        "key": "dtic:AD0783315",
+        "i": 64,
+        "title": "Response of Materials to Impulsive Loading"
+      }
+    ],
+    "hit_at_k": 0.0
+  },
+  {
+    "qid": "synth-097",
+    "question": "What phenomenon can obscure the form of the crater in extreme cases like rocks?",
+    "gold": "fracture and spall",
+    "prediction": "In extreme cases, rocks can be brought up absolutely vertically and in blocks hundreds of meters across, obscuring the form of the crater [2].",
+    "token_f1": 0.08333333333333333,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "dtic:AD0284280",
+        "i": 261,
+        "title": "PROCEEDINGS OF THE FIFTH SYMPOSIUM ON HYPERVELOCITY IMPACT. DENVER, OCTOBER 30, 31, NOVEMBER 1, 1961, VOLUME I - PART 2"
+      },
+      {
+        "key": "ntrs:20030079993",
+        "i": 119,
+        "title": "Results of the Workshop on Impact Cratering: Bridging the Gap Between Modeling and Observations"
+      },
+      {
+        "key": "ntrs:19930001007",
+        "i": 5,
+        "title": "Self-organized rock textures and multiring structure in the Duolun crater"
+      },
+      {
+        "key": "ntrs:20080026200",
+        "i": 20,
+        "title": "Laboratory Simulation of Impacts upon Aluminum Foils of the Stardust Spacecraft: Calibration of Dust Particle Size from Comet Wild 2"
+      },
+      {
+        "key": "ntrs:19730013002",
+        "i": 86,
+        "title": "Apollo 16 Preliminary Science Report"
+      }
+    ],
+    "hit_at_k": 0.0
+  },
+  {
+    "qid": "synth-098",
+    "question": "What is the approximate specific surface area (SSA) of the explosive HNS used in the experiments?",
+    "gold": "approximately 8 m2/g",
+    "prediction": "The sources do not contain this information.",
+    "token_f1": 0.0,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "osti:2341955",
+        "i": 7,
+        "title": "A Low Velocity Impact Experiment for Obtaining Ignition Thresholds in Unconfined High Explosives"
+      },
+      {
+        "key": "ntrs:20120007778",
+        "i": 3,
+        "title": "Hypervelocity Impact Initiation of Explosive Transfer Lines"
+      },
+      {
+        "key": "dtic:ADA250130",
+        "i": 15,
+        "title": "Modelling Short Duration Shock Wave Attenuation in Explosives"
+      },
+      {
+        "key": "ntrs:19930021318",
+        "i": 24,
+        "title": "Hypervelocity impact testing of the Space Station utility distribution system carrier"
+      },
+      {
+        "key": "ntrs:20120013687",
+        "i": 11,
+        "title": "Hypervelocity Impact of Explosive Transfer Lines"
+      }
+    ],
+    "hit_at_k": 1.0
+  },
+  {
+    "qid": "synth-099",
+    "question": "What assumption was made regarding the heat rate during the combustion process?",
+    "gold": "The heat rate for the combustion process was assumed equal to the heat rate during the cooling process.",
+    "prediction": "Semenov assumed the rate of heat generation was constant and the rate of heat loss was linear according to Newtonian Law of Cooling [2].",
+    "token_f1": 0.4571428571428571,
+    "substring_hit": 0.0,
+    "retrieved": [
+      {
+        "key": "dtic:AD0244541",
+        "i": 5,
+        "title": "PERFORMANCE OF A 40-MM COMBUSTION-HEATED LIGHT GAS GUN LAUNCHER"
+      },
+      {
+        "key": "dtic:ADA616258",
+        "i": 29,
+        "title": "Reflections of a Wave: An Analysis of Photonic Doppler Velocimetry Systems"
+      },
+      {
+        "key": "ntrs:19830011538",
+        "i": 55,
+        "title": "Advanced ion thruster and electrochemical launcher research"
+      },
+      {
+        "key": "osti:3024792",
+        "i": 20,
+        "title": "Investigating shock-induced chemical reactions in Ni+Al multilayers: A continuum-based mesoscale approach with Arrhenius kinetics and artificial thermal conduction"
+      },
+      {
+        "key": "dtic:AD0661833",
+        "i": 25,
+        "title": "PENETRATION MECHANICS AND POST-PERFORATION EFFECTS IN AN ALUMINUM- ALUMINUM IMPACT SYSTEM"
+      }
+    ],
+    "hit_at_k": 1.0
+  }
+]

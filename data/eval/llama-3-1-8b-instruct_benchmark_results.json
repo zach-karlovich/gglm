@@ -1,0 +1,41 @@
+{
+  "squadv2": {
+    "name": "squadv2",
+    "alias": "squadv2",
+    "sample_len": 11873,
+    "exact,none": 22.70698222858587,
+    "exact_stderr,none": "N/A",
+    "f1,none": 30.486079668256302,
+    "f1_stderr,none": "N/A",
+    "HasAns_exact,none": 45.47908232118758,
+    "HasAns_exact_stderr,none": "N/A",
+    "HasAns_f1,none": 61.05958567834128,
+    "HasAns_f1_stderr,none": "N/A",
+    "NoAns_exact,none": 0.0,
+    "NoAns_exact_stderr,none": "N/A",
+    "NoAns_f1,none": 0.0,
+    "NoAns_f1_stderr,none": "N/A",
+    "best_exact,none": 51.73924029310199,
+    "best_exact_stderr,none": "N/A",
+    "best_f1,none": 56.510690738508735,
+    "best_f1_stderr,none": "N/A"
+  },
+  "gsm8k_cot": {
+    "name": "gsm8k_cot",
+    "alias": "gsm8k_cot",
+    "sample_len": 1319,
+    "exact_match,strict-match": 0.7619408642911296,
+    "exact_match_stderr,strict-match": 0.011731278748420906,
+    "exact_match,flexible-extract": 0.7733131159969674,
+    "exact_match_stderr,flexible-extract": 0.011532758009339984
+  },
+  "arc_challenge": {
+    "name": "arc_challenge",
+    "alias": "arc_challenge",
+    "sample_len": 1172,
+    "acc,none": 0.5401023890784983,
+    "acc_stderr,none": 0.01456431885692496,
+    "acc_norm,none": 0.5597269624573379,
+    "acc_norm_stderr,none": 0.014506769524804264
+  }
+}
