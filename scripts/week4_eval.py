@@ -1,8 +1,8 @@
 """Re-run the custom split with the demo prompt, and measure the refusal gate.
 usage: uv run python scripts/week4_eval.py [--combo qwen-emb-cosine] [--threshold 0.60]
 
-Outputs go to GGLM_DATA/eval/week4/, never near the frozen check-in 4
-results. Reports answer scores against the check-in baseline plus refusal
+Outputs go to GGLM_DATA/eval/week4/, never near the frozen baseline
+results. Reports answer scores against that baseline plus refusal
 rates: on the 91 test questions (should stay near zero, they are all
 answerable) and on the off-domain probes (should be near 100 percent).
 """

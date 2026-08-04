@@ -1,32 +1,26 @@
-# gglm
+# gglm | Gas Gun Language Model
 
-Gas Gun Language Model: a RAG assistant for light gas gun (LGG) and
-hypervelocity impact (HVI) literature. UVA DS5002 final project.
-
-gglm answers only from documents it can cite and refuses when the corpus
-doesn't cover the question. A wrong firing parameter is worse than no answer.
+A RAG assistant for light gas gun (LGG) and hypervelocity impact (HVI)
+literature. gglm answers only from documents it can cite, and it refuses when
+the corpus doesn't cover the question instead of making something up.
 
 ## Setup
 
-```
+```bash
 uv python install 3.12
 uv sync              # base pipeline
 uv sync --group rag  # retrieval + evaluation stack (GPU-sized)
 uv run pytest
 ```
 
-The venv has to be built on a uv-managed interpreter. Triton JIT-compiles a
-CUDA helper against the interpreter's headers the first time a kernel runs,
-and a system Python without its dev headers fails there at the first
-`generate` call, deep inside a traceback that looks like a torch problem.
-
 ## Pipeline
 
-Bulk data lives under `$GGLM_DATA` (default `data/`); on Rivanna, point it at
-scratch. The catalog stays repo-local so a scratch purge can't take it.
+Bulk data lives under `$GGLM_DATA` (default `data/`). The collect, parse, and
+chunk stages run on any machine; embedding and generation want a GPU. On a
+shared cluster, point `$GGLM_DATA` at scratch storage and keep the catalog in
+the repo so a scratch purge can't take the provenance record.
 
-```
-export GGLM_DATA=/scratch/$USER/gglm
+```bash
 bash scripts/collect.sh 200 50     # download PDFs, NTRS deep, OSTI shallow
 uv run python scripts/parse_all.py # page text + kind classification
 uv run python -m gglm.chunk        # 300-word windows -> chunks.jsonl
@@ -40,9 +34,40 @@ chunking skips `scanned` docs, which have no usable text layer.
 
 Hybrid BM25 + dense, fused with reciprocal rank fusion and deduplicated to one
 chunk per document. BM25 catches report numbers and acronyms; dense catches
-paraphrase. `retrieve.COMBOS` names the arms compared in Check-in 4: bge-small
-and Qwen3-Embedding under cosine and L2, bm25 alone, and the hybrid.
+paraphrase. `retrieve.COMBOS` names the compared arms: bge-small and
+Qwen3-Embedding under cosine and L2, bm25 alone, and the hybrid.
 Generation is Qwen2.5-7B answering from numbered sources it has to cite.
+
+## Asking
+
+The front door is one command. Answers are short, cite sources by number, and
+print the source list with pages and links:
+
+```console
+$ uv run python -m gglm.ask "What is the approximate maximum velocity of a two-stage light gas gun?"
+The approximate maximum velocity of a two-stage light gas gun is 8.0 km/sec [1, 3].
+
+Sources:
+  [1] Concept definition study for an extremely large aerophysics range facility, pp. 9-9  (https://ntrs.nasa.gov/citations/19930013798)
+  [2] Response of Materials to Impulsive Loading, pp. 66-67  (https://archive.org/details/DTIC_AD0783315)
+  [3] New higher-order Godunov code for modelling performance of two-stage light gas guns, pp. 6-6  (https://ntrs.nasa.gov/citations/19960008802)
+  [4] Preliminary Assessment of the Use of Heavy Gases in Two-Stage Light Gas Guns, pp. 1-2  (https://ntrs.nasa.gov/citations/20180007479)
+  [5] Results of Two-Stage Light-Gas Gun Development Efforts and Hypervelocity Impact Tests of Advanced Thermal Protection Materials, pp. 6-6  (https://ntrs.nasa.gov/citations/19980236871)
+```
+
+If the best retrieved chunk's cosine falls below 0.55, gglm declines before
+generation and shows the nearest sources instead (`--no-gate` overrides):
+
+```console
+$ uv run python -m gglm.ask "What is the best recipe for vanilla ice cream?"
+The corpus doesn't support an answer to this. (best chunk score 0.35, threshold 0.55)
+Nearest sources, for reference:
+  [1] A Low Altitude Meteorological Data Base.  (https://archive.org/details/DTIC_ADA039063)
+  [2] Microstructure and Dynamic Failure Properties of Freeze-Cast Materials for Thermobaric Warhead Cases  (https://archive.org/details/DTIC_ADA574034)
+  [3] High pressure cosmochemistry of major planetary interiors: Laboratory studies of the water-rich region of the system ammonia-water  (https://ntrs.nasa.gov/citations/19870013963)
+  [4] Space Station Planetology Experiments (SSPEX)  (https://ntrs.nasa.gov/citations/19860017664)
+  [5] Reports of Planetary Geology and Geophysics Program, 1984  (https://ntrs.nasa.gov/citations/19850015163)
+```
 
 ## Sources
 
@@ -61,31 +86,32 @@ corpus reconstructible.
 
 ## Evaluation
 
-Two test sets live in `data/eval/`: ten hand-written LGG/HVI pairs from
-Check-in 3 (`manual_pairs.jsonl`) and a synthetic split of ~100 QA pairs
-written by Qwen2.5-14B from sampled chunks (`rag_test.jsonl`).
+Two test sets live in `data/eval/`. `manual_pairs.jsonl` holds ten hand-written
+LGG/HVI pairs from the early literature review, used for the retrieval
+comparison and gate calibration. `rag_test.jsonl` is the synthetic test split:
+91 QA pairs written by Qwen2.5-14B from sampled chunks, filtered, then
+hand-audited across three passes.
 
-Benchmarks run pre- and post-RAG: `squadv2`, `gsm8k_cot`, and `arc_challenge`
-through lm_eval, plus the synthetic split answered with and without retrieval.
-Scoring is deterministic: token F1 and substring hit for answers, support
-recall and hit@5 for retrieval. Every run writes paired results/samples JSONs
-to `$GGLM_DATA/eval/checkin4/`; render the captured metrics as markdown with
+The model is measured with and without retrieval on the synthetic split, and
+on three lm_eval benchmarks (`squadv2`, `gsm8k_cot`, `arc_challenge`). Scoring
+is deterministic: token F1 and substring hit for answers, support recall and
+hit@5 for retrieval. Every run writes paired results/samples JSONs under
+`$GGLM_DATA/eval/`, and
 
-```
+```bash
 uv run python -m gglm.eval.report
 ```
 
-Planned: a refusal threshold calibrated on retrieval scores, so gglm declines
-rather than guesses when support is weak.
+renders the captured metrics as markdown tables.
 
-## Test fixtures
-
-Mock & Holt (1976), NSWC/DL TR-3473 (`digital`); Rynearson & Rand (1972),
-TEES-9075-CR-72-02 (`digital-degraded`). Public-domain US government reports
-the parser tests run against.
+The refusal gate is a threshold on the best retrieved chunk's cosine,
+calibrated at 0.55: in-domain dev questions score 0.568-0.820, off-domain
+probes 0.279-0.524. Checked against the full test split: 0 of 91 answerable
+questions refused, 10 of 10 off-domain probes refused. The calibration table
+and gate report live in `data/eval/`.
 
 ## Declaration of AI
 
-I used Claude for scaffolding and coding assistance throughout this repo, as
-declared in my course check-ins. The corpus design, source selection,
-relevance-filter audits, model choices, and the analysis are mine.
+I used Claude for scaffolding and coding assistance throughout this repo. The
+corpus design, source selection, relevance-filter audits, model choices, and
+the analysis are mine.

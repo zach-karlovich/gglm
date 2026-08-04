@@ -1,5 +1,5 @@
 """Retrieval over the chunk index: search arms fused with reciprocal rank
-fusion, one chunk per document. COMBOS names the Check-in 4 arms."""
+fusion, one chunk per document. COMBOS names the compared arms."""
 
 from gglm import index
 
@@ -26,7 +26,7 @@ class Retriever:
         self.arms = list(arms)
         self.k = k # chunks returned
         self.n = n # candidates per arm before fusion
-        self.rrf_k = rrf_k # 60 from the RRF paper, same as check-in 3
+        self.rrf_k = rrf_k # 60 from the RRF paper
 
     def retrieve(self, query):
         if len(self.arms) == 1:

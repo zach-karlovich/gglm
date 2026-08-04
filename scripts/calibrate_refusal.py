@@ -2,7 +2,7 @@
 usage: uv run python scripts/calibrate_refusal.py [--combo qwen-emb-cosine]
 
 Scores the best-chunk cosine for questions the corpus can answer (the ten
-check-in 3 dev pairs) against questions it can't (off-domain probes below).
+hand-written dev pairs) against questions it can't (off-domain probes below).
 Needs the built index and really wants a GPU - the 0.6B embedder crawls on
 a login node. week4_eval.py calls suggest() itself, so the usual path is
 just sbatch scripts/week4.slurm and read the table in the log.
@@ -14,7 +14,7 @@ import json
 from gglm import index, retrieve
 from gglm.eval.qagen import eval_dir
 
-# clearly outside the corpus - the check-in 3 "ice cream" test, expanded
+# clearly outside the corpus - the original "ice cream" test, expanded
 OFF_DOMAIN = [
     "What is the best recipe for vanilla ice cream?",
     "Who won the 2022 World Cup final?",

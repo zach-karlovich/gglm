@@ -1,7 +1,7 @@
 """Load the generator and answer questions, with or without retrieved sources.
 Greedy decoding throughout, so runs repeat exactly."""
 
-GENERATOR = "Qwen/Qwen2.5-7B-Instruct" # picked in check-in 3
+GENERATOR = "Qwen/Qwen2.5-7B-Instruct" # best of 1.5B/7B/14B in early testing
 
 SYSTEM = (
     "You are a light gas gun and hypervelocity impact researcher and engineer. "
@@ -17,10 +17,10 @@ RAG_SYSTEM = (
 )
 
 # two demos ahead of the real question: answer in one cited sentence, and
-# refuse when the sources don't have it. Check-in 4 showed the model is
+# refuse when the sources don't have it. Earlier runs showed the model is
 # right but wordy (hit@5 0.76 vs substring 0.25) and never refuses on its
-# own (squadv2 NoAns 0.0). Demo text comes from the check-in 3 dev pairs,
-# never the test split.
+# own (squadv2 NoAns 0.0). Demo text comes from the dev pairs, never the
+# test split.
 DEMOS = [
     (
         "[1] Two-stage light gas guns: A two-stage light gas gun has two separate "

@@ -1,5 +1,5 @@
 #!/bin/bash
-# Week 4 eval: demo prompt + refusal gate on the custom split -> eval/week4.
+# Demo prompt + refusal gate on the custom split -> eval/week4.
 # Calibrates the threshold itself and logs the table; pass a number to
 # override:  sbatch scripts/week4.slurm [0.62]
 # Monitor:  squeue --me     tail -f logs/gglm-week4-<jobid>.out

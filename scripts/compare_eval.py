@@ -2,7 +2,7 @@
 usage: uv run python scripts/compare_eval.py --model mistralai/Mistral-7B-Instruct-v0.3 [--rag] [--limit 2]
 
 Outputs go to GGLM_DATA/eval/compare/<slug>/, never near the frozen
-check-in 4 or week 4 results.
+earlier results.
 """
 
 import argparse
@@ -23,7 +23,7 @@ def main():
     ap.add_argument("--model", required=True)
     ap.add_argument("--rag", action="store_true",
                     help="also run the custom split through the retriever")
-    ap.add_argument("--combo", default="qwen-emb-cosine") # week 4 winner
+    ap.add_argument("--combo", default="qwen-emb-cosine") # the winning combo
     ap.add_argument("--limit", type=int, default=None, help="smoke tests only")
     args = ap.parse_args()
 
