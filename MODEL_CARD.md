@@ -10,6 +10,31 @@ tags:
 - aerospace
 - hypervelocity-impact
 - retrieval
+metrics:
+- f1
+- exact_match
+model-index:
+- name: gglm
+  results:
+  - task:
+      type: question-answering
+      name: Corpus-grounded QA (LGG/HVI)
+    dataset:
+      name: gglm synthetic test split (91 pairs, hand-audited)
+      type: gglm-rag-test
+    metrics:
+    - type: f1
+      name: Token F1 (with retrieval)
+      value: 0.275
+    - type: substring_hit
+      name: Substring hit (with retrieval)
+      value: 0.275
+    - type: hit_at_5
+      name: Retrieval hit@5
+      value: 0.758
+    source:
+      name: Evaluation evidence in this repo (data/eval)
+      url: https://huggingface.co/jzkarlovich/gglm/tree/main/data/eval
 ---
 
 # gglm — Gas Gun Language Model
