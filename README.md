@@ -4,6 +4,9 @@ A RAG assistant for light gas gun (LGG) and hypervelocity impact (HVI)
 literature. gglm answers only from documents it can cite, and it refuses when
 the corpus doesn't cover the question instead of making something up.
 
+**Hugging Face:** [jzkarlovich/gglm](https://huggingface.co/jzkarlovich/gglm)
+(the model card, with full evaluation results and corpus provenance)
+
 ## Setup
 
 ```bash
@@ -32,11 +35,16 @@ chunking skips `scanned` docs, which have no usable text layer.
 
 ## Retrieval
 
-Hybrid BM25 + dense, fused with reciprocal rank fusion and deduplicated to one
-chunk per document. BM25 catches report numbers and acronyms; dense catches
-paraphrase. `retrieve.COMBOS` names the compared arms: bge-small and
-Qwen3-Embedding under cosine and L2, bm25 alone, and the hybrid.
-Generation is Qwen2.5-7B answering from numbered sources it has to cite.
+Hybrid [BM25](https://www.staff.city.ac.uk/~sbrp622/papers/foundations_bm25_review.pdf)
++ dense, fused with
+[reciprocal rank fusion](https://dl.acm.org/doi/10.1145/1571941.1572114) and
+deduplicated to one chunk per document. BM25 catches report numbers and
+acronyms; dense catches paraphrase. `retrieve.COMBOS` names the compared arms:
+[bge-small](https://huggingface.co/BAAI/bge-small-en-v1.5) and
+[Qwen3-Embedding](https://huggingface.co/Qwen/Qwen3-Embedding-0.6B) under
+cosine and L2, bm25 alone, and the hybrid. Generation is
+[Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct)
+answering from numbered sources it has to cite.
 
 ## Asking
 
@@ -71,12 +79,14 @@ Nearest sources, for reference:
 
 ## Sources
 
-NASA NTRS, DOE OSTI, and DTIC. Public keyless APIs, distribution-unlimited
+[NASA NTRS](https://ntrs.nasa.gov), [DOE OSTI](https://www.osti.gov), and
+[DTIC](https://discover.dtic.mil). Public keyless APIs, distribution-unlimited
 documents only. NTRS is crawled deep and stays on topic; OSTI shallow, since
 its full-text search gets noisy at depth. DTIC blocks scripted clients, so
-its approved-for-public-release reports come through the Internet Archive
-mirror (`collection:dticarchive`); catalog entries keep both the mirror URL
-and the canonical DTIC citation page.
+its approved-for-public-release reports come through the
+[Internet Archive mirror](https://archive.org/details/dticarchive)
+(`collection:dticarchive`); catalog entries keep both the mirror URL and the
+canonical DTIC citation page.
 
 Every download gets a line in `data/catalog.jsonl`, an append-only provenance
 log (title, authors, citation URL, license, sha256, kind) that doubles as the
@@ -89,11 +99,15 @@ corpus reconstructible.
 Two test sets live in `data/eval/`. `manual_pairs.jsonl` holds ten hand-written
 LGG/HVI pairs from the early literature review, used for the retrieval
 comparison and gate calibration. `rag_test.jsonl` is the synthetic test split:
-91 QA pairs written by Qwen2.5-14B from sampled chunks, filtered, then
-hand-audited across three passes.
+91 QA pairs written by
+[Qwen2.5-14B-Instruct](https://huggingface.co/Qwen/Qwen2.5-14B-Instruct) from
+sampled chunks, filtered, then hand-audited across three passes.
 
 The model is measured with and without retrieval on the synthetic split, and
-on three lm_eval benchmarks (`squadv2`, `gsm8k_cot`, `arc_challenge`). Scoring
+on three [lm_eval](https://github.com/EleutherAI/lm-evaluation-harness)
+benchmarks ([squadv2](https://huggingface.co/datasets/rajpurkar/squad_v2),
+[gsm8k_cot](https://huggingface.co/datasets/openai/gsm8k),
+[arc_challenge](https://huggingface.co/datasets/allenai/ai2_arc)). Scoring
 is deterministic: token F1 and substring hit for answers, support recall and
 hit@5 for retrieval. Every run writes paired results/samples JSONs under
 `$GGLM_DATA/eval/`, and
