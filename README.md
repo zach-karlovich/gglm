@@ -24,7 +24,7 @@ shared cluster, point `$GGLM_DATA` at scratch storage and keep the catalog in
 the repo so a scratch purge can't take the provenance record.
 
 ```bash
-bash scripts/collect.sh 200 50     # download PDFs, NTRS deep, OSTI shallow
+bash scripts/collect.sh            # download PDFs, default 200 per query
 uv run python scripts/parse_all.py # page text + kind classification
 uv run python -m gglm.chunk        # 300-word windows -> chunks.jsonl
 uv run python -m gglm.index        # embed chunks -> index/*.npy
