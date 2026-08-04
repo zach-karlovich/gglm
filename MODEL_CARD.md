@@ -1,5 +1,6 @@
 ---
 license: apache-2.0
+thumbnail: https://huggingface.co/jzkarlovich/gglm/resolve/main/assets/social-card.png
 language:
 - en
 base_model: Qwen/Qwen2.5-7B-Instruct
