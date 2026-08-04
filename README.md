@@ -48,8 +48,8 @@ answering from numbered sources it has to cite.
 
 ## Asking
 
-The front door is one command. Answers are short, cite sources by number, and
-print the source list with pages and links:
+Ask from the command line. Answers are short, cite sources by number, and end
+with the source list, pages and links included:
 
 ```console
 $ uv run python -m gglm.ask "What is the approximate maximum velocity of a two-stage light gas gun?"

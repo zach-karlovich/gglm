@@ -162,8 +162,8 @@ refusal when the corpus can't support one. It is not a firing-procedure authorit
 (see [Limitations](#limitations)). There are no weights to download from this repo.
 The generator loads straight from
 [Qwen/Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct) via
-[Transformers](https://huggingface.co/docs/transformers), and the pipeline's front
-door is one command. Recommended settings are the calibrated defaults: greedy
+[Transformers](https://huggingface.co/docs/transformers), and asking a question is
+a single command. Recommended settings are the calibrated defaults: greedy
 decoding, k=5 retrieved chunks, refusal threshold 0.55.
 
 ```python
