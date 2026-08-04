@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
 # Collect the gglm corpus: every query against NTRS, OSTI, and DTIC.
 # usage: bash scripts/collect.sh [ntrs-max] [osti-max] [dtic-max]
-#   one arg  -> same depth for all (back-compat)
-#   OSTI's full-text search matches very broadly (tens of thousands of loose
-#   hits), so cap it lower to keep off-topic docs out of the corpus. DTIC goes
-#   through the archive.org mirror; its phrase search stays on topic, so it
-#   takes the NTRS depth by default.
-# On Rivanna: export GGLM_DATA=/scratch/$USER/gglm first.
+#   The defaults are the depths the corpus was built with. OSTI's full-text
+#   search matches very broadly (tens of thousands of loose hits), so it
+#   defaults lower to keep off-topic docs out. DTIC goes through the
+#   archive.org mirror; its phrase search stays on topic, so it takes the
+#   NTRS depth.
+# On a cluster: export GGLM_DATA=/scratch/$USER/gglm first.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
 NTRS_MAX="${1:-200}"
-OSTI_MAX="${2:-$NTRS_MAX}"
+OSTI_MAX="${2:-50}"
 DTIC_MAX="${3:-$NTRS_MAX}"
 
 QUERIES=(
