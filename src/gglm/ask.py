@@ -3,6 +3,7 @@ usage: python -m gglm.ask ["What gas drives the second stage?"] [--combo NAME] [
 
 import argparse
 import os
+import re
 import sys
 
 from gglm import index, retrieve
@@ -45,9 +46,11 @@ def main():
     if retrieve.COMBOS[args.combo]["model"] is None:
         ap.error("the refusal gate needs a dense arm; pick a combo with an embedder")
 
+    if not args.question:
+        print(f"{paint('1;36', 'Embedder:')} {retrieve.COMBOS[args.combo]['model']}")
     chunks = index.load_chunks()
     retriever = retrieve.build(args.combo, chunks=chunks, k=args.k)
-    gen = None  # loaded on the first question that passes the gate
+    gen = None  # single-shot loads it lazily, after the gate
 
     def ask(question, label=False):
         nonlocal gen
@@ -69,8 +72,13 @@ def main():
         model, tok = gen
         text = answer(model, tok, question, hits)
         print(f"{paint('1;32', 'Answer:')} {text}" if label else text)
+        # uncited sources drop out; an answer citing nothing keeps the full list
+        cited = {int(n) for grp in re.findall(r"\[([\d,\s]+)\]", text)
+                 for n in grp.split(",") if n.strip().isdigit()}
         print(paint("2", "\nSources:"))
         for n, c in enumerate(hits, 1):
+            if cited and n not in cited:
+                continue
             pages = f", pp. {c['pages'][0]}-{c['pages'][1]}" if c.get("pages") else ""
             print(paint("2", f"  [{n}] {c['title']}{pages}  ({c['url']})"))
 
@@ -82,9 +90,19 @@ def main():
 
     # \001/\002 tell readline the escapes are zero-width
     color = sys.stdout.isatty() and not os.environ.get("NO_COLOR")
-    prompt = "\n\001\x1b[1;36m\002gglm>\001\x1b[0m\002 " if color else "\ngglm> "
+    prompt = "\001\x1b[1;36m\002gglm>\001\x1b[0m\002 " if color else "gglm> "
+
+    # topical questions are the expected case, so pay the generator load up
+    # front instead of on the first answer
+    from gglm.generate import GENERATOR, load_generator
+
+    model_id = args.model or GENERATOR
+    print(f"{paint('1;36', 'Generator:')} {model_id}")
+    gen = load_generator(model_id)
+
     while True:  # REPL: retriever and generator stay loaded between questions
         try:
+            print()
             question = input(prompt).strip()
         except (EOFError, KeyboardInterrupt):
             print()

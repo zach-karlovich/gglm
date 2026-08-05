@@ -59,7 +59,8 @@ answering from numbered sources it has to cite.
 ## Asking
 
 Ask from the command line. Answers are short, cite sources by number, and end
-with the source list, pages and links included:
+with the sources they cite, pages and links included (an answer that cites
+nothing keeps the full retrieved list):
 
 ```console
 $ uv run python -m gglm.ask "What is the approximate maximum velocity of a two-stage light gas gun?"
@@ -67,10 +68,7 @@ The approximate maximum velocity of a two-stage light gas gun is 8.0 km/sec [1, 
 
 Sources:
   [1] Concept definition study for an extremely large aerophysics range facility, pp. 9-9  (https://ntrs.nasa.gov/citations/19930013798)
-  [2] Response of Materials to Impulsive Loading, pp. 66-67  (https://archive.org/details/DTIC_AD0783315)
   [3] New higher-order Godunov code for modelling performance of two-stage light gas guns, pp. 6-6  (https://ntrs.nasa.gov/citations/19960008802)
-  [4] Preliminary Assessment of the Use of Heavy Gases in Two-Stage Light Gas Guns, pp. 1-2  (https://ntrs.nasa.gov/citations/20180007479)
-  [5] Results of Two-Stage Light-Gas Gun Development Efforts and Hypervelocity Impact Tests of Advanced Thermal Protection Materials, pp. 6-6  (https://ntrs.nasa.gov/citations/19980236871)
 ```
 
 `--model` swaps the generator for cards where the 7B default is a squeeze,
