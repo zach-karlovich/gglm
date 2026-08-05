@@ -2,6 +2,8 @@
 usage: python -m gglm.ask ["What gas drives the second stage?"] [--combo NAME] [--model ID] [--no-gate]"""
 
 import argparse
+import os
+import sys
 
 from gglm import index, retrieve
 
@@ -10,6 +12,13 @@ from gglm import index, retrieve
 # off-domain probes 0.279-0.524, so 0.55 splits them with margin both ways.
 # Gate check: 0/91 answerable refused, 10/10 off-domain refused.
 REFUSAL_THRESHOLD = 0.55
+
+
+def paint(code, s):
+    """ANSI-color s for terminals; plain when piped or NO_COLOR is set."""
+    if not sys.stdout.isatty() or os.environ.get("NO_COLOR"):
+        return s
+    return f"\x1b[{code}m{s}\x1b[0m"
 
 
 def gate(support, threshold=REFUSAL_THRESHOLD):
@@ -46,11 +55,11 @@ def main():
         hits = retriever.retrieve(question)
 
         if not gate(support) and not args.no_gate:
-            print(f"The corpus doesn't support an answer to this. (best chunk score "
-                  f"{support:.2f}, threshold {REFUSAL_THRESHOLD})")
-            print("Nearest sources, for reference:")
+            print(paint("33", f"The corpus doesn't support an answer to this. (best "
+                              f"chunk score {support:.2f}, threshold {REFUSAL_THRESHOLD})"))
+            print(paint("2", "Nearest sources, for reference:"))
             for n, c in enumerate(hits, 1):
-                print(f"  [{n}] {c['title']}  ({c['url']})")
+                print(paint("2", f"  [{n}] {c['title']}  ({c['url']})"))
             return
 
         from gglm.generate import GENERATOR, answer, load_generator
@@ -59,17 +68,23 @@ def main():
             gen = load_generator(args.model or GENERATOR)
         model, tok = gen
         print(answer(model, tok, question, hits))
-        print("\nSources:")
+        print(paint("2", "\nSources:"))
         for n, c in enumerate(hits, 1):
             pages = f", pp. {c['pages'][0]}-{c['pages'][1]}" if c.get("pages") else ""
-            print(f"  [{n}] {c['title']}{pages}  ({c['url']})")
+            print(paint("2", f"  [{n}] {c['title']}{pages}  ({c['url']})"))
 
     if args.question:
         ask(" ".join(args.question))
         return
+
+    import readline  # noqa: F401  arrow-key editing and history in input()
+
+    # \001/\002 tell readline the escapes are zero-width
+    color = sys.stdout.isatty() and not os.environ.get("NO_COLOR")
+    prompt = "\n\001\x1b[1;36m\002gglm>\001\x1b[0m\002 " if color else "\ngglm> "
     while True:  # REPL: retriever and generator stay loaded between questions
         try:
-            question = input("\ngglm> ").strip()
+            question = input(prompt).strip()
         except (EOFError, KeyboardInterrupt):
             print()
             return
