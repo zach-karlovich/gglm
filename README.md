@@ -76,6 +76,13 @@ Sources:
 `--model` swaps the generator for cards where the 7B default is a squeeze,
 e.g. `--model Qwen/Qwen2.5-3B-Instruct` on a 16 GB card.
 
+With no question, gglm drops into a REPL that keeps the retriever and
+generator loaded, so follow-ups skip the model load. The REPL wants a
+generator that fits resident: on a 16 GB card the offloaded 7B OOMs on
+its second generate, so pair the REPL with the 3B there. On the ROCm
+setup above, run everything with `uv run --no-sync` so the sync doesn't
+swap torch back to the CUDA wheel.
+
 On Rivanna, ask from an interactive GPU allocation:
 
 ```bash

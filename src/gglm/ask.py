@@ -1,5 +1,5 @@
-"""Ask gglm a question from the command line.
-usage: python -m gglm.ask "What gas drives the second stage?" [--combo NAME] [--model ID] [--no-gate]"""
+"""Ask gglm a question from the command line; no question starts a REPL.
+usage: python -m gglm.ask ["What gas drives the second stage?"] [--combo NAME] [--model ID] [--no-gate]"""
 
 import argparse
 
@@ -25,39 +25,57 @@ def support_score(retriever, question):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("question", nargs="+")
+    ap.add_argument("question", nargs="*")
     ap.add_argument("--combo", default="qwen-emb-cosine", choices=list(retrieve.COMBOS))
     ap.add_argument("--k", type=int, default=5)
     ap.add_argument("--model", default=None,
                     help="generator model id, for cards the 7B default won't fit")
     ap.add_argument("--no-gate", action="store_true", help="answer even without support")
     args = ap.parse_args()
-    question = " ".join(args.question)
 
     if retrieve.COMBOS[args.combo]["model"] is None:
         ap.error("the refusal gate needs a dense arm; pick a combo with an embedder")
 
     chunks = index.load_chunks()
     retriever = retrieve.build(args.combo, chunks=chunks, k=args.k)
-    support = support_score(retriever, question)
-    hits = retriever.retrieve(question)
+    gen = None  # loaded on the first question that passes the gate
 
-    if not gate(support) and not args.no_gate:
-        print(f"The corpus doesn't support an answer to this. (best chunk score "
-              f"{support:.2f}, threshold {REFUSAL_THRESHOLD})")
-        print("Nearest sources, for reference:")
+    def ask(question):
+        nonlocal gen
+        support = support_score(retriever, question)
+        hits = retriever.retrieve(question)
+
+        if not gate(support) and not args.no_gate:
+            print(f"The corpus doesn't support an answer to this. (best chunk score "
+                  f"{support:.2f}, threshold {REFUSAL_THRESHOLD})")
+            print("Nearest sources, for reference:")
+            for n, c in enumerate(hits, 1):
+                print(f"  [{n}] {c['title']}  ({c['url']})")
+            return
+
+        from gglm.generate import GENERATOR, answer, load_generator
+
+        if gen is None:
+            gen = load_generator(args.model or GENERATOR)
+        model, tok = gen
+        print(answer(model, tok, question, hits))
+        print("\nSources:")
         for n, c in enumerate(hits, 1):
-            print(f"  [{n}] {c['title']}  ({c['url']})")
+            pages = f", pp. {c['pages'][0]}-{c['pages'][1]}" if c.get("pages") else ""
+            print(f"  [{n}] {c['title']}{pages}  ({c['url']})")
+
+    if args.question:
+        ask(" ".join(args.question))
         return
-
-    from gglm.generate import GENERATOR, answer, load_generator
-
-    model, tok = load_generator(args.model or GENERATOR)
-    print(answer(model, tok, question, hits))
-    print("\nSources:")
-    for n, c in enumerate(hits, 1):
-        pages = f", pp. {c['pages'][0]}-{c['pages'][1]}" if c.get("pages") else ""
-        print(f"  [{n}] {c['title']}{pages}  ({c['url']})")
+    while True:  # REPL: retriever and generator stay loaded between questions
+        try:
+            question = input("\ngglm> ").strip()
+        except (EOFError, KeyboardInterrupt):
+            print()
+            return
+        if question:
+            ask(question)
+            index.free_gpu()
 
 
 if __name__ == "__main__":
