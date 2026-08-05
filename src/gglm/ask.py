@@ -55,15 +55,11 @@ def main():
     def ask(question, label=False):
         nonlocal gen
         support = support_score(retriever, question)
-        hits = retriever.retrieve(question)
-
         if not gate(support) and not args.no_gate:
             print(paint("33", f"The corpus doesn't support an answer to this. (best "
                               f"chunk score {support:.2f}, threshold {REFUSAL_THRESHOLD})"))
-            print(paint("2", "Nearest sources, for reference:"))
-            for n, c in enumerate(hits, 1):
-                print(paint("2", f"  [{n}] {c['title']}  ({c['url']})"))
             return
+        hits = retriever.retrieve(question)
 
         from gglm.generate import GENERATOR, answer, load_generator
 

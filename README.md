@@ -92,17 +92,11 @@ uv run python -m gglm.ask "What gas drives the second stage?"
 ```
 
 If the best retrieved chunk's cosine falls below 0.55, gglm declines before
-generation and shows the nearest sources instead (`--no-gate` overrides):
+generation (`--no-gate` overrides):
 
 ```console
 $ uv run python -m gglm.ask "What is the best recipe for vanilla ice cream?"
 The corpus doesn't support an answer to this. (best chunk score 0.35, threshold 0.55)
-Nearest sources, for reference:
-  [1] A Low Altitude Meteorological Data Base.  (https://archive.org/details/DTIC_ADA039063)
-  [2] Microstructure and Dynamic Failure Properties of Freeze-Cast Materials for Thermobaric Warhead Cases  (https://archive.org/details/DTIC_ADA574034)
-  [3] High pressure cosmochemistry of major planetary interiors: Laboratory studies of the water-rich region of the system ammonia-water  (https://ntrs.nasa.gov/citations/19870013963)
-  [4] Space Station Planetology Experiments (SSPEX)  (https://ntrs.nasa.gov/citations/19860017664)
-  [5] Reports of Planetary Geology and Geophysics Program, 1984  (https://ntrs.nasa.gov/citations/19850015163)
 ```
 
 ## Sources
