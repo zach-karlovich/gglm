@@ -16,6 +16,16 @@ uv sync --group rag  # retrieval + evaluation stack (GPU-sized)
 uv run pytest
 ```
 
+PyPI serves torch as CUDA wheels. On an AMD card, swap in the ROCm build of
+the same version after syncing:
+
+```bash
+uv pip install 'torch==2.13.0+rocm7.2' --index-url https://download.pytorch.org/whl/rocm7.2
+```
+
+Plain `uv run` re-syncs the environment and puts the CUDA wheel back, so run
+with `uv run --no-sync` (or `export UV_NO_SYNC=1`) once the swap is in.
+
 ## Pipeline
 
 Bulk data lives under `$GGLM_DATA` (default `data/`). The collect, parse, and
@@ -61,6 +71,19 @@ Sources:
   [3] New higher-order Godunov code for modelling performance of two-stage light gas guns, pp. 6-6  (https://ntrs.nasa.gov/citations/19960008802)
   [4] Preliminary Assessment of the Use of Heavy Gases in Two-Stage Light Gas Guns, pp. 1-2  (https://ntrs.nasa.gov/citations/20180007479)
   [5] Results of Two-Stage Light-Gas Gun Development Efforts and Hypervelocity Impact Tests of Advanced Thermal Protection Materials, pp. 6-6  (https://ntrs.nasa.gov/citations/19980236871)
+```
+
+`--model` swaps the generator for cards where the 7B default is a squeeze,
+e.g. `--model Qwen/Qwen2.5-3B-Instruct` on a 16 GB card.
+
+On Rivanna, ask from an interactive GPU allocation:
+
+```bash
+ijob -A ds5002 -p gpu --gres=gpu:a100:1 -c 4 --mem=32G -t 1:00:00
+module load uv
+export GGLM_DATA=/scratch/$USER/gglm
+export HF_HOME=/scratch/$USER/models/cache
+uv run python -m gglm.ask "What gas drives the second stage?"
 ```
 
 If the best retrieved chunk's cosine falls below 0.55, gglm declines before

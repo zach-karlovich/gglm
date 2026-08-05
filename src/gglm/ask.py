@@ -1,5 +1,5 @@
 """Ask gglm a question from the command line.
-usage: python -m gglm.ask "What gas drives the second stage?" [--combo NAME] [--no-gate]"""
+usage: python -m gglm.ask "What gas drives the second stage?" [--combo NAME] [--model ID] [--no-gate]"""
 
 import argparse
 
@@ -28,6 +28,8 @@ def main():
     ap.add_argument("question", nargs="+")
     ap.add_argument("--combo", default="qwen-emb-cosine", choices=list(retrieve.COMBOS))
     ap.add_argument("--k", type=int, default=5)
+    ap.add_argument("--model", default=None,
+                    help="generator model id, for cards the 7B default won't fit")
     ap.add_argument("--no-gate", action="store_true", help="answer even without support")
     args = ap.parse_args()
     question = " ".join(args.question)
@@ -48,9 +50,9 @@ def main():
             print(f"  [{n}] {c['title']}  ({c['url']})")
         return
 
-    from gglm.generate import answer, load_generator
+    from gglm.generate import GENERATOR, answer, load_generator
 
-    model, tok = load_generator()
+    model, tok = load_generator(args.model or GENERATOR)
     print(answer(model, tok, question, hits))
     print("\nSources:")
     for n, c in enumerate(hits, 1):
