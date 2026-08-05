@@ -49,7 +49,7 @@ def main():
     retriever = retrieve.build(args.combo, chunks=chunks, k=args.k)
     gen = None  # loaded on the first question that passes the gate
 
-    def ask(question):
+    def ask(question, label=False):
         nonlocal gen
         support = support_score(retriever, question)
         hits = retriever.retrieve(question)
@@ -67,7 +67,8 @@ def main():
         if gen is None:
             gen = load_generator(args.model or GENERATOR)
         model, tok = gen
-        print(answer(model, tok, question, hits))
+        text = answer(model, tok, question, hits)
+        print(f"{paint('1;32', 'Answer:')} {text}" if label else text)
         print(paint("2", "\nSources:"))
         for n, c in enumerate(hits, 1):
             pages = f", pp. {c['pages'][0]}-{c['pages'][1]}" if c.get("pages") else ""
@@ -89,7 +90,8 @@ def main():
             print()
             return
         if question:
-            ask(question)
+            print()
+            ask(question, label=True)
             index.free_gpu()
 
 
